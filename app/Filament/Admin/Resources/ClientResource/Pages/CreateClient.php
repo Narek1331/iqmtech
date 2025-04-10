@@ -6,7 +6,11 @@ use App\Filament\Admin\Resources\ClientResource;
 use Filament\Actions;
 use Filament\Resources\Pages\CreateRecord;
 use Illuminate\Support\Facades\Auth;
-
+use Spatie\Permission\Models\{
+    Role,
+    Permission
+};
+use Illuminate\Support\Carbon;
 class CreateClient extends CreateRecord
 {
     protected static string $resource = ClientResource::class;
@@ -16,11 +20,15 @@ class CreateClient extends CreateRecord
         return 'Создать';
     }
 
-    protected function mutateFormDataBeforeCreate(array $data): array
+    protected function afterCreate(): void
     {
-        $data['main_user_id'] = Auth::id();
-        $data['email_verified_at'] = now();
+       $this->record->main_user_id = Auth::id();
+       $this->record->email_verified_at = Carbon::now();;
 
-        return $data;
+       $role = Role::find($this->data['role']);
+
+       $this->record->assignRole($role['name']);
+
+       $this->record->save();
     }
 }

@@ -77,7 +77,13 @@ class ClientResource extends Resource
                         )
                         ->default(Role::where('name','Client')->first()->id)
                         ->label('Роль')
-                        ->reactive(),
+                        ->reactive()
+                        ->afterStateHydrated(function($livewire){
+                            if($livewire->record && $role = $livewire->record->roles()->latest()->get()->last())
+                            {
+                                $livewire->data['role'] = $role->id;
+                            }
+                        }),
 
                     TextInput::make('name')
                         ->label('Имя сотрудника')

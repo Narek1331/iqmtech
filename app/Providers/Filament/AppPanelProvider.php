@@ -19,7 +19,10 @@ use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 use Filament\Pages\Auth\EmailVerification\EmailVerificationPrompt;
 use Althinect\FilamentSpatieRolesPermissions\FilamentSpatieRolesPermissionsPlugin;
-use App\Filament\Pages\Auth\Register;
+use App\Filament\Pages\Auth\{
+    Register,
+    EditProfile
+};
 use Guava\FilamentKnowledgeBase\KnowledgeBasePlugin;
 use App\Http\Middleware\IsClient;
 class AppPanelProvider extends PanelProvider
@@ -62,6 +65,7 @@ class AppPanelProvider extends PanelProvider
             ->brandName('IQm.Tech')
             ->registration(Register::class)
             ->passwordReset()
+            ->profile(EditProfile::class)
             ->emailVerification(EmailVerificationPrompt::class)
             ->plugins([
                 KnowledgeBasePlugin::make(),
