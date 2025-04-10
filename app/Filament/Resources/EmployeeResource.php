@@ -121,6 +121,11 @@ class EmployeeResource extends Resource
                             CheckboxList::make('permissions')
                                 ->label('')
                                 ->relationship('permissions', 'name')
+                                ->options(
+                                    Permission::all()->pluck('name', 'id')->mapWithKeys(function ($name, $id) {
+                                        return [$id => __('role.' . $name)];
+                                    })
+                                )
                                 ->columns(4)
                                 ->gridDirection('row')
                                 ->required()

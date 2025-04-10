@@ -290,6 +290,24 @@ class DataResource extends Resource
                 ->label('Оператор')
                 ->options(fn () => Data::query()->distinct()->pluck('mobile_operator', 'mobile_operator')->filter()->toArray())
                 ->searchable(),
+                Tables\Filters\SelectFilter::make('user_id')
+                ->label('Пользователь')
+                ->options(fn () => \App\Models\User::query()->pluck('name', 'id')->toArray()) // Show all users
+                ->searchable(),
+
+            Tables\Filters\SelectFilter::make('project_id')
+                ->label('Проект')
+                ->options(function () {
+                    $userId = request()->get('filters.user_id');
+                    // If a user is selected, filter the projects by that user
+                    if ($userId) {
+                        return \App\Models\Project::where('user_id', $userId)->pluck('name', 'id')->toArray();
+                    }
+
+                    // Otherwise, show all projects
+                    return \App\Models\Project::pluck('name', 'id')->toArray();
+                })
+                ->searchable()
         ])
         ->actions([])
         ->bulkActions([

@@ -148,6 +148,19 @@ class ProjectResource extends Resource
                     ->toggleable()
                     ->sortable(),
 
+                    TextColumn::make('id')
+                    ->label('Данные')
+                    ->formatStateUsing(function($record,$state){
+                        return 'Данные';
+                    })
+                    ->icon('heroicon-o-document')
+                    ->action(function($record){
+                        $userId = $record->user->id;
+                        $projectId = $record->id;
+                        return redirect("/admin/data?tableFilters[user_id][value]=$userId&tableFilters[project_id][value]=$projectId");
+                    })
+                    ->toggleable()
+
             ])
 
             ->filters([
