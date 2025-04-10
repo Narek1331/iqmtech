@@ -61,7 +61,6 @@ class ClientResource extends Resource
         }
 
         return $query;
-
     }
 
     public static function form(Form $form): Form
