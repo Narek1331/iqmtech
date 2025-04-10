@@ -21,7 +21,7 @@
         <link rel="stylesheet" href="assets/css/navbar.css">
         <link rel="stylesheet" href="assets/css/footer.css">
 		<link rel="stylesheet" href="assets/css/responsive.css">
-		
+
 		<title>Ошибка 404 - такой страницы не существует</title>
 
         <link rel="icon" type="image/png" href="assets/images/favicon.png">
@@ -40,12 +40,12 @@
         <!-- End Preloader Area -->
 
         <!-- Start Navbar Area -->
-         <div class="navbar-area navbar-style-two"> 
+         <div class="navbar-area navbar-style-two">
             <div class="main-responsive-nav">
                 <div class="container">
                     <div class="main-responsive-menu">
                         <div class="logo">
-                            <a href="index.html">
+                            <a href="/">
                            IQm<span class="dark" style="">.Tech</span>
                             <br />
                             <span class="smail-right">платформа</span></a>
@@ -57,48 +57,48 @@
             <div class="main-navbar">
                 <div class="container-fluid">
                     <nav class="navbar navbar-expand-md navbar-light">
-                        <a class="navbar-brand" href="index.html">
+                        <a class="navbar-brand" href="/">
                           IQm<span class="dark" style="">.Tech</span>
                         <br />
                             <span class="smail-right">платформа</span></a>
-  
+
                         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto">
                                 <li class="nav-item">
-                                    <a href="index.html#nav1" class="nav-link active">
+                                    <a href="/#nav1" class="nav-link active">
                                         Главная
                                     </a>
                                 </li>
-                                
+
                                 <li class="nav-item">
-                                    <a href="index.html#nav2" class="nav-link">
+                                    <a href="/#nav2" class="nav-link">
                                         Услуги
                                     </a>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a href="index.html#nav3" class="nav-link">
+                                    <a href="/#nav3" class="nav-link">
                                       Этапы
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="index.html#nav4" class="nav-link">
+                                    <a href="/#nav4" class="nav-link">
                                         Тарифы
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="index.html#nav5" class="nav-link">
+                                    <a href="/#nav5" class="nav-link">
                                         Технология
                                     </a>
-                                </li>    
+                                </li>
                                 <li class="nav-item">
-                                    <a href="index.html#nav6" class="nav-link">
+                                    <a href="/#nav6" class="nav-link">
                                        FAQ
                                     </a>
                                 </li>
-    
+
                                 <li class="nav-item">
-                                    <a href="index.html#nav7" class="nav-link">Контакты</a>
+                                    <a href="/#nav7" class="nav-link">Контакты</a>
                                 </li>
                             </ul>
 
@@ -107,7 +107,7 @@
                                   <p class="phone-number"><i class="ri-phone-fill"></i> <a href="tel:88001001350">8 800 100-13-50</a></p>
                                 </div>
                                 <div class="option-item">
-                                    <a href="index.html" class="default-btn">Начать работу</a>
+                                    <a href="/" class="default-btn">Начать работу</a>
                                 </div>
                             </div>
                         </div>
@@ -124,7 +124,7 @@
                             <div class="circle circle-three"></div>
                         </div>
                     </div>
-                    
+
                     <div class="container">
                         <div class="option-inner">
                             <div class="others-options d-flex align-items-center">
@@ -150,10 +150,10 @@
                     <div class="col-lg-6 col-md-6">
                         <div class="page-banner-content" data-aos="fade-right" data-aos-delay="50" data-aos-duration="500" data-aos-once="true">
                             <h2>Ошибка 404 </h2>
-        
+
                             <ul>
                                 <li>
-                                    <a href="index.html">Главная</a>
+                                    <a href="/">Главная</a>
                                 </li>
                                 <li>404 ошибка</li>
                             </ul>
@@ -169,7 +169,7 @@
             </div>
         </div>
         <!-- End Page Banner Area -->
-        
+
         <!-- Start 404 Error Area -->
         <div class="error-area ptb-100">
             <div class="container">
@@ -177,7 +177,7 @@
                     <img src="assets/images/error.png">
                     <h3>Ошибка 404: такой страницы не существует</h3>
                     <p>Возможно, страница, которую вы ищете, была удалена, ее название изменилось или она временно недоступна.</p>
-                    <a href="index.html" class="default-btn">Вернуться на главную страницу</a>
+                    <a href="/" class="default-btn">Вернуться на главную страницу</a>
                 </div>
             </div>
         </div>
@@ -190,7 +190,7 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="single-footer-widget">
                             <div class="widget-logo">
-                                <a href="index.html"> IQm<span class="white">.Tech</span><br>
+                                <a href="/"> IQm<span class="white">.Tech</span><br>
                                 <span class="smail-right-white">платформа</span>
                                 </a>
                             </div>
@@ -199,7 +199,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="col-lg-3 col-sm-6">
                         <div class="single-footer-widget ps-5">
                             <h3>Меню</h3>
@@ -208,34 +208,34 @@
                                 <li>
                                     <div class="row justify-content-center">
                                         <div class="col-lg-6 col-sm-6 col-6">
-                                            <a href="index.html">Главная</a>
+                                            <a href="/">Главная</a>
                                         </div>
                                         <div class="col-lg-6 col-sm-6 col-6">
-                                            <a href="index.html#nav2">Услуги</a>
+                                            <a href="/#nav2">Услуги</a>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="row justify-content-center">
                                         <div class="col-lg-6 col-sm-6 col-6">
-                                            <a href="index.html#nav3">Этапы</a>
+                                            <a href="/#nav3">Этапы</a>
                                         </div>
                                         <div class="col-lg-6 col-sm-6 col-6">
-                                            <a href="index.html#nav4">Тарифы</a>
+                                            <a href="/#nav4">Тарифы</a>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="row justify-content-center">
                                     <div class="col-lg-6 col-sm-6 col-6">
-                                        <a href="index.html#nav5">Технология</a>
+                                        <a href="/#nav5">Технология</a>
                                     </div>
                                     <div class="col-lg-6 col-sm-6 col-6">
-                                     <a href="index.html#nav6">FAQ</a>
+                                     <a href="/#nav6">FAQ</a>
                                     </div>
                                     </div>
                                 </li>
-                             
+
                             </ul>
                         </div>
                     </div>
@@ -297,7 +297,7 @@
         <!-- Links of JS files -->
         <script data-cfasync="false" src="5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/js/jquery.meanmenu.js"></script> 
+        <script src="assets/js/jquery.meanmenu.js"></script>
         <script src="assets/js/owl.carousel.min.js"></script>
         <script src="assets/js/jquery.appear.js"></script>
         <script src="assets/js/odometer.min.js"></script>
