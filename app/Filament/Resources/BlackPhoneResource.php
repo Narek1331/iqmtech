@@ -20,7 +20,7 @@ use Filament\Forms\Components\{
     Card,
 };
 use App\Traits\User\GetHelper;
-
+use Ysfkaya\FilamentPhoneInput\Forms\PhoneInput;
 class BlackPhoneResource extends Resource
 {
     use GetHelper;
@@ -45,12 +45,10 @@ class BlackPhoneResource extends Resource
         return $form
             ->schema([
                 Card::make()->schema([
-                    TextInput::make('phone')
+                    PhoneInput::make('phone')
                         ->label('Телефон')
-                        ->tel()
-                        ->required()
-                        ->minLength(1)
-                        ->maxLength(20),
+                        ->countryStatePath('ru')
+                        ->onlyCountries(['ru'])
                     ])
             ]);
     }
