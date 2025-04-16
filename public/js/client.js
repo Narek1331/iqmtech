@@ -1,7 +1,8 @@
-const scriptTag = document.querySelector('script[src$="client.js"]');
-const token = scriptTag ? scriptTag.getAttribute('token') : null;
+// let iqmtechScriptTag = document.querySelector('script[src$="client.js"]');
+const iqmtechScriptTag = document.querySelector('script[src*="iqmtech.ru"]');
+const iqmtechToken = iqmtechScriptTag ? iqmtechScriptTag.getAttribute('token') : null;
 
-if (token) {
+if (iqmtechToken) {
     // Function to get UTM parameters from the URL
     function getUTMParams() {
         const urlParams = new URLSearchParams(window.location.search);
@@ -148,12 +149,12 @@ if (token) {
         });
 
         // Construct the URL with all query parameters
-        const url = `http://192.168.1.224/api/sync/data?${params.toString()}`;
+        const url = `https://iqmtech.ru/api/sync/data?${params.toString()}`;
         try {
             const response = await fetch(url, {
                 method: 'POST',
                 headers: {
-                  'Authorization': `Bearer ${token}`,
+                  'Authorization': `Bearer ${iqmtechToken}`,
                   'Content-Type': 'application/json'
                 },
               });
@@ -165,3 +166,5 @@ if (token) {
     // Call the function to prepare and send data to the server
     prepareAndSendData();
 }
+
+console.log(44444)

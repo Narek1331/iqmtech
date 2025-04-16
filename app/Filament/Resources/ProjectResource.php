@@ -104,10 +104,27 @@ class ProjectResource extends Resource
     {
         return $table
             ->columns([
-                TextColumn::make('created_at')
-                    ->label('Дата')
+                TextColumn::make('number_of_identifications')
+                    ->label('Кол-во идентификаций')
+                    ->alignment('left')
+                    ->getStateUsing(function ($record) {
+                        $current = $record->daily_limit ?? 0;
+                        $left =  $current - $record->datas()->count();
+
+                        return <<<HTML
+                        <div>
+                            <p>Текущий: <span class="font-medium">$current</span></p>
+                            <p>Осталось: <span class="font-medium">$left</span></p>
+                        </div>
+                    HTML;
+                    })
+                    ->html(),
+                TextColumn::make('price')
+                    ->label('Стоимость')
                     ->sortable()
-                    ->dateTime(),
+                    ->getStateUsing(function ($record) {
+                        return number_format($record->global_limit * 10, 0, '.', ' ');;
+                    }),
                 TextColumn::make('name')
                     ->label('Проект')
                     ->searchable()
@@ -122,15 +139,19 @@ class ProjectResource extends Resource
                     ->searchable()
                     ->toggleable()
                     ->sortable(),
+                ToggleColumn::make('status')
+                    ->label('Статус')
+                    ->sortable(),
                 TextColumn::make('domains.domain')
                     ->label('Домены')
                     ->searchable()
                     ->toggleable()
                     ->sortable(),
-                ToggleColumn::make('status')
-                    ->label('Статус')
-                    ->sortable(),
-
+                TextColumn::make('created_at')
+                    ->label('Дата')
+                    ->sortable()
+                    ->toggleable()
+                    ->dateTime(),
             ])
 
             ->filters([

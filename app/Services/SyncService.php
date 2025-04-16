@@ -78,17 +78,36 @@ class SyncService
 
     private function checkDomainExists($url, $domains)
     {
-        $normalizedUrl = parse_url($url, PHP_URL_HOST);
+        $normalizedUrl = $this->normalizeDomain($url);
 
         foreach ($domains as $domain) {
-            $normalizedDomain = parse_url($domain->domain);
-            $normalizedDomainData = $normalizedDomain['path'] ?? $normalizedDomain['host'];
+            $normalizedDomain = $this->normalizeDomain($domain->domain);
 
-            if ($normalizedUrl == $normalizedDomainData) {
+            if ($normalizedUrl && $normalizedDomain && $normalizedUrl === $normalizedDomain) {
                 return true;
             }
         }
 
         return false;
     }
+
+    private function normalizeDomain(string $url): ?string
+    {
+        $parsed = parse_url(trim($url));
+
+        if (is_array($parsed)) {
+
+            if (isset($parsed['host'])) {
+                return strtolower($parsed['host']);
+            }
+
+            if (isset($parsed['path'])) {
+                return strtolower($parsed['path']);
+            }
+        }
+
+        return null;
+    }
+
+
 }
