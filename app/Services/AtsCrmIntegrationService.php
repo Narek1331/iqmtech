@@ -13,13 +13,14 @@ class AtsCrmIntegrationService
     protected ?string $accessToken;
     protected ?string $refreshToken;
 
-    public function __construct(string $baseUrl, ?string $accessToken = null, ?string $refreshToken = null)
+    public function __construct()
     {
-        $this->baseUrl = rtrim($baseUrl, '/');
-        $this->accessToken = $accessToken;
-        $this->refreshToken = $refreshToken;
+        $this->baseUrl = 'https://ats2.tele2.ru/crm/openapi';
+        $this->accessToken = 'eyJhbGciOiJIUzUxMiJ9.eyJVc2VyRGV0YWlsc0ltcGwiOnsiY29tcGFueUlkIjoxOTk1MiwidXNlcklkIjo0MzgyMSwibG9naW4iOiI3OTUzNzA2MjU3MyJ9LCJzdWIiOiJBQ0NFU1NfT1BFTkFQSV9UT0tFTiIsImV4cCI6MTc0NDk3NDEwM30.4ZNjXgdafzZsPg6M8Spa7-jiWwkBqzrK0rKahelEWXAwOeLPEbkOmLrxrjwCa5pL_rDH6ipJRKpHWudiyRTZ5g';
+        $this->refreshToken = 'eyJhbGciOiJIUzUxMiJ9.eyJVc2VyRGV0YWlsc0ltcGwiOnsiY29tcGFueUlkIjoxOTk1MiwidXNlcklkIjo0MzgyMSwibG9naW4iOiI3OTUzNzA2MjU3MyJ9LCJzdWIiOiJSRUZSRVNIX09QRU5BUElfVE9LRU4iLCJleHAiOjE3NDU0OTI1MDN9.SkNVz1gMHlGxzM83AVUldBz6pKZMaJDtN2zgJ5GR1OY8qr7TRYCP5WWjb8EejKXFnVs8fRINf5ehrBtnPU5EwQ';
         $this->client = new Client([
             'base_uri' => $this->baseUrl,
+            'verify' => storage_path('/certs/Root-R3.crt'),
             'headers' => [
                 'Accept' => 'application/json',
                 'Content-Type' => 'application/json',

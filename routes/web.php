@@ -20,3 +20,9 @@ Route::get('/consent', function () {
 });
 
 Route::post('/contact', [ContactController::class, 'sendEmail']);
+
+
+Route::get('/test', function () {
+    $service = new \App\Services\AtsCrmIntegrationService();
+    dd($service->updateToken());
+});

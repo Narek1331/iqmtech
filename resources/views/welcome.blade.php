@@ -408,10 +408,10 @@
                             <div class="pricing-header">
                                 <h3><i class="ri-send-plane-line"></i> Старт</h3>
                             </div>
-                            <div class="price">154 000 <span>₽</span></div>
+                            <div class="price">110 000 <span>₽</span></div>
                             <div class="pricing-btn">
                                 <b><span>1 000 номеров с обработкой Call-центром</span></b>
-                                <span>номер 154 рубля</span>
+                                <span>номер 110 рублей</span>
                                 <br /><br />
                                 <a href="" class="default-btn openModal" id="openModal">Начать работу</a>
                             </div>
@@ -432,10 +432,10 @@
                             <div class="pricing-header">
                                 <h3><i class="ri-star-line"></i> Оптимальный</h3>
                             </div>
-                             <div class="price">432 000 <span>₽</span></div>
+                             <div class="price">270 000 <span>₽</span></div>
                            <div class="pricing-btn">
                                   <b><span>3 000 номеров с обработкой Call-центром</span></b>
-                                  <span>номер 144 рубля</span>
+                                  <span>номер 90 рублей</span>
                                   <br />  <br />
                                 <a href="" class="default-btn openModal" id="openModal">Начать работу</a>
                             </div>
@@ -456,10 +456,10 @@
                             <div class="pricing-header">
                                 <h3><i class="ri-shield-line"></i> Бизнес PRO</h3>
                             </div>
-                            <div class="price">936 000 <span>₽</span></div>
+                            <div class="price">800 000 <span>₽</span></div>
                             <div class="pricing-btn">
-                                 <b><span>7 000 номеров с обработкой Call-центром</span></b>
-                                  <span>номер 134 рубля</span>
+                                 <b><span>10 000 номеров с обработкой Call-центром</span></b>
+                                  <span>номер 80 рублей</span>
                                   <br />  <br />
                                 <a href="" class="default-btn openModal" id="openModal">Начать работу</a>
                             </div>
