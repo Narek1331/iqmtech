@@ -479,7 +479,7 @@
                 <div class="services-details-quote">
                     <p style="text-align: center;">Тариф
                     <b class="size-larger">Демо</b>
-                    - 1 000 номеров без обработки Call-центром за <b class="red">70 000 рублей</b> / стоимость номера 70 рублей</p>
+                    - 1 000 номеров без обработки Call-центром за <b class="red">55 000 рублей</b> / стоимость номера 55 рублей</p>
                     </div>
                 </div>
             </div>

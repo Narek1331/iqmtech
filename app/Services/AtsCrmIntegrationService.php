@@ -21,6 +21,7 @@ class AtsCrmIntegrationService
         $this->client = new Client([
             'base_uri' => $this->baseUrl,
             // 'verify' => storage_path('/certs/tele2_ca_bundle.pem'),
+            'verify' => '/home/narek/Documents/web/certificates/certificate.crt',
             'headers' => [
                 'Accept' => 'application/json',
                 'Content-Type' => 'application/json',
@@ -68,7 +69,7 @@ class AtsCrmIntegrationService
         try {
             $response = $this->client->put('/authorization/refresh/token', [
                 'headers' => [
-                    'Authorization' => $this->refreshToken,
+                    'Authorization' => $this->accessToken,
                 ],
             ]);
 
