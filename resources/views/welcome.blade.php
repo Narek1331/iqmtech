@@ -417,7 +417,7 @@
                             </div>
                             <ul class="features-list">
                                 <li><i class="ri-check-line"></i> Передача номеров клиентов.</li>
-                                <li><i class="ri-check-line"></i> Выявленин заинтересованных Call-центром.</li>
+                                <li><i class="ri-check-line"></i> Выявление заинтересованных Call-центром.</li>
                                 <li><i class="ri-check-line"></i> Анализ конверсии источников.</li>
                                 <li><i class="ri-check-line"></i> Прослушка диалогов ваших менеджеров.</li>
                                 <li><i class="ri-check-line"></i> Корректировка скрипта.</li>
@@ -441,7 +441,7 @@
                             </div>
                             <ul class="features-list">
                                 <li><i class="ri-check-line"></i> Передача номеров клиентов.</li>
-                                <li><i class="ri-check-line"></i> Выявленин заинтересованных Call-центром.</li>
+                                <li><i class="ri-check-line"></i> Выявление заинтересованных Call-центром.</li>
                                 <li><i class="ri-check-line"></i> Анализ конверсии источников.</li>
                                 <li><i class="ri-check-line"></i> Прослушка диалогов ваших менеджеров.</li>
                                 <li><i class="ri-check-line"></i> Корректировка скрипта.</li>
@@ -465,7 +465,7 @@
                             </div>
                             <ul class="features-list">
                                 <li><i class="ri-check-line"></i> Передача номеров клиентов.</li>
-                                <li><i class="ri-check-line"></i> Выявленин заинтересованных Call-центром.</li>
+                                <li><i class="ri-check-line"></i> Выявление заинтересованных Call-центром.</li>
                                 <li><i class="ri-check-line"></i> Анализ конверсии источников.</li>
                                 <li><i class="ri-check-line"></i> Прослушка диалогов ваших менеджеров.</li>
                                 <li><i class="ri-check-line"></i> Корректировка скрипта.</li>
