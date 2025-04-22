@@ -408,10 +408,10 @@
                             <div class="pricing-header">
                                 <h3><i class="ri-send-plane-line"></i> Старт</h3>
                             </div>
-                            <div class="price">110 000 <span>₽</span></div>
+                            <div class="price">95 000 <span>₽</span></div>
                             <div class="pricing-btn">
                                 <b><span>1 000 номеров с обработкой Call-центром</span></b>
-                                <span>номер 110 рублей</span>
+                                <span>номер 95 рублей</span>
                                 <br /><br />
                                 <a href="" class="default-btn openModal" id="openModal">Начать работу</a>
                             </div>
@@ -432,10 +432,10 @@
                             <div class="pricing-header">
                                 <h3><i class="ri-star-line"></i> Оптимальный</h3>
                             </div>
-                             <div class="price">270 000 <span>₽</span></div>
+                             <div class="price">255 000 <span>₽</span></div>
                            <div class="pricing-btn">
                                   <b><span>3 000 номеров с обработкой Call-центром</span></b>
-                                  <span>номер 90 рублей</span>
+                                  <span>номер 85 рублей</span>
                                   <br />  <br />
                                 <a href="" class="default-btn openModal" id="openModal">Начать работу</a>
                             </div>
