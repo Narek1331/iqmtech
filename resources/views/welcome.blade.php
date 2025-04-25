@@ -394,6 +394,16 @@
         </div>
         <!-- End Why Choose Us Area -->
 <div id="nav4"></div>
+
+        <?php
+            $infoDatas = [
+                'Определение 1 000 номеров',
+                'Обзвон собранной базы нашим call-центром',
+                'Аналитика источников',
+                'Продающий скрипт на основе вашего оффера',
+                'Персональный менеджер проекта и отчётность в online режиме'
+            ];
+        ?>
         <!-- Start Pricing Area -->
         <div class="pricing-area pt-100 pb-75">
             <div class="container">
@@ -405,72 +415,67 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-4 col-md-6">
                         <div class="single-pricing-table">
-                            <div class="pricing-header">
-                                <h3><i class="ri-send-plane-line"></i> Старт</h3>
+                            <div class="pricing-header d-flex jc-sb">
+                                <h3>
+                                    {{-- <i class="ri-send-plane-line"></i>  --}}
+                                    Старт</h3>
+                                {{-- <a class="default-btn">скидка 20%</a> --}}
                             </div>
                             <div class="price">95 000 <span>₽</span></div>
                             <div class="pricing-btn">
-                                <b><span>1 000 номеров с обработкой Call-центром</span></b>
-                                <span>номер 95 рублей</span>
+                                <b><span>95 руб/номер с обработкой call-центра</span></b>
+
+                                {{-- <b><span>1 000 номеров с обработкой Call-центром</span></b>
+                                <span>номер 95 рублей</span> --}}
                                 <br /><br />
                                 <a href="" class="default-btn openModal" id="openModal">Начать работу</a>
                             </div>
                             <ul class="features-list">
-                                <li><i class="ri-check-line"></i> Передача номеров клиентов.</li>
-                                <li><i class="ri-check-line"></i> Выявление заинтересованных Call-центром.</li>
-                                <li><i class="ri-check-line"></i> Анализ конверсии источников.</li>
-                                <li><i class="ri-check-line"></i> Прослушка диалогов ваших менеджеров.</li>
-                                <li><i class="ri-check-line"></i> Корректировка скрипта.</li>
-                                <li><i class="ri-check-line"></i> Контроль взятия заявок в работу.</li>
-                                <li><i class="ri-check-line"></i> Гарантированная конверсия в лиды 10%</li>
+                                @foreach ($infoDatas as $infoData)
+                                    <li><i class="ri-check-line"></i>{{ $infoData }}</li>
+                                @endforeach
                             </ul>
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-md-6">
                         <div class="single-pricing-table active">
-                            <div class="pricing-header">
-                                <h3><i class="ri-star-line"></i> Оптимальный</h3>
+                            <div class="pricing-header d-flex jc-sb">
+                                <h3></i> Оптимальный</h3>
+                                <h3 class="sale-btn">скидка 10%</h3>
                             </div>
                              <div class="price">255 000 <span>₽</span></div>
                            <div class="pricing-btn">
-                                  <b><span>3 000 номеров с обработкой Call-центром</span></b>
-                                  <span>номер 85 рублей</span>
+                                    <b><span>85 руб/номер с обработкой call-центра</span></b>
+                                  {{-- <b><span>3 000 номеров с обработкой Call-центром</span></b>
+                                  <span>номер 85 рублей</span> --}}
                                   <br />  <br />
                                 <a href="" class="default-btn openModal" id="openModal">Начать работу</a>
                             </div>
                             <ul class="features-list">
-                                <li><i class="ri-check-line"></i> Передача номеров клиентов.</li>
-                                <li><i class="ri-check-line"></i> Выявление заинтересованных Call-центром.</li>
-                                <li><i class="ri-check-line"></i> Анализ конверсии источников.</li>
-                                <li><i class="ri-check-line"></i> Прослушка диалогов ваших менеджеров.</li>
-                                <li><i class="ri-check-line"></i> Корректировка скрипта.</li>
-                                <li><i class="ri-check-line"></i> Контроль взятия заявок в работу.</li>
-                                <li><i class="ri-check-line"></i>Гарантированная конверсия в лиды 10%</li>
+                                @foreach ($infoDatas as $infoData)
+                                    <li><i class="ri-check-line"></i>{{ $infoData }}</li>
+                                @endforeach
                             </ul>
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-md-6">
                         <div class="single-pricing-table">
-                            <div class="pricing-header">
-                                <h3><i class="ri-shield-line"></i> Бизнес PRO</h3>
+                            <div class="pricing-header d-flex jc-sb">
+                                <h3>Бизнес PRO</h3>
+                                <h3 class="sale-btn">скидка 15%</h3>
                             </div>
                             <div class="price">800 000 <span>₽</span></div>
                             <div class="pricing-btn">
-                                 <b><span>10 000 номеров с обработкой Call-центром</span></b>
-                                  <span>номер 80 рублей</span>
+                                 <b><span>80 руб/номер с обработкой call-центра</span></b>
                                   <br />  <br />
                                 <a href="" class="default-btn openModal" id="openModal">Начать работу</a>
                             </div>
                             <ul class="features-list">
-                                <li><i class="ri-check-line"></i> Передача номеров клиентов.</li>
-                                <li><i class="ri-check-line"></i> Выявление заинтересованных Call-центром.</li>
-                                <li><i class="ri-check-line"></i> Анализ конверсии источников.</li>
-                                <li><i class="ri-check-line"></i> Прослушка диалогов ваших менеджеров.</li>
-                                <li><i class="ri-check-line"></i> Корректировка скрипта.</li>
-                                <li><i class="ri-check-line"></i> Контроль взятия заявок в работу.</li>
-                                <li><i class="ri-check-line"></i>Гарантированная конверсия в лиды 10%</li>
+                                @foreach ($infoDatas as $infoData)
+                                    <li><i class="ri-check-line"></i>{{ $infoData }}</li>
+                                @endforeach
                             </ul>
                         </div>
                     </div>

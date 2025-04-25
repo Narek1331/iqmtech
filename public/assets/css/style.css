@@ -5160,7 +5160,7 @@ Go Top CSS
     border: 1px solid #eee;
     -webkit-box-shadow: -13px 8px 32px rgba(217, 35, 12, 0.04);
     box-shadow: -13px 8px 32px #e9ecefcc;}
-    
+
 .iq-main-company_info {
     display: grid;
     gap: 4px;
@@ -5241,3 +5241,39 @@ Go Top CSS
 .form-group-police {
   text-align: center;
 }
+
+.d-flex {
+    display: flex;
+}
+
+.jc-sb {
+    justify-content: space-between;
+}
+
+.sale-btn {
+    padding: 2px 2px;
+    text-align: center;
+    color: var(--white-color) !important;
+    font-size: var(--font-size);
+    font-weight: 500;
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    border-radius: 5px;
+    z-index: 0;
+    background: var(--gradient-color);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    overflow: hidden;
+    white-space: nowrap;
+    letter-spacing: 1px;
+  }
