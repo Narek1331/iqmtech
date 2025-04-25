@@ -24,5 +24,5 @@ Route::post('/contact', [ContactController::class, 'sendEmail']);
 
 Route::get('/test', function () {
     $service = new \App\Services\AtsCrmIntegrationService();
-    dd($service->getCurrentCalls());
+    dd($service->updateToken());
 });

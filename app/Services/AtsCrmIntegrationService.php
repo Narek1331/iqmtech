@@ -16,12 +16,12 @@ class AtsCrmIntegrationService
     public function __construct()
     {
         $this->baseUrl = 'https://ats2.tele2.ru/crm/openapi';
-        $this->accessToken = 'eyJhbGciOiJIUzUxMiJ9.eyJVc2VyRGV0YWlsc0ltcGwiOnsiY29tcGFueUlkIjoxOTk1MiwidXNlcklkIjo0MzgyMSwibG9naW4iOiI3OTUzNzA2MjU3MyJ9LCJzdWIiOiJBQ0NFU1NfT1BFTkFQSV9UT0tFTiIsImV4cCI6MTc0NDk3NDEwM30.4ZNjXgdafzZsPg6M8Spa7-jiWwkBqzrK0rKahelEWXAwOeLPEbkOmLrxrjwCa5pL_rDH6ipJRKpHWudiyRTZ5g';
-        $this->refreshToken = 'eyJhbGciOiJIUzUxMiJ9.eyJVc2VyRGV0YWlsc0ltcGwiOnsiY29tcGFueUlkIjoxOTk1MiwidXNlcklkIjo0MzgyMSwibG9naW4iOiI3OTUzNzA2MjU3MyJ9LCJzdWIiOiJSRUZSRVNIX09QRU5BUElfVE9LRU4iLCJleHAiOjE3NDU0OTI1MDN9.SkNVz1gMHlGxzM83AVUldBz6pKZMaJDtN2zgJ5GR1OY8qr7TRYCP5WWjb8EejKXFnVs8fRINf5ehrBtnPU5EwQ';
+        $this->accessToken = 'eyJhbGciOiJIUzUxMiJ9.eyJVc2VyRGV0YWlsc0ltcGwiOnsiY29tcGFueUlkIjoxOTk1MiwidXNlcklkIjo0MzgyMSwibG9naW4iOiI3OTUzNzA2MjU3MyJ9LCJzdWIiOiJBQ0NFU1NfT1BFTkFQSV9UT0tFTiIsImV4cCI6MTc0NTY2OTMyM30.3SIYxREo-0vTjz1TdjvKRdyJccaImX5SrlpIlyKWQwXmXrESr2A6ceRRo4og9Gl5Nh36Y9OaFKFpbUfEcpv_Aw';
+        $this->refreshToken = 'eyJhbGciOiJIUzUxMiJ9.eyJVc2VyRGV0YWlsc0ltcGwiOnsiY29tcGFueUlkIjoxOTk1MiwidXNlcklkIjo0MzgyMSwibG9naW4iOiI3OTUzNzA2MjU3MyJ9LCJzdWIiOiJSRUZSRVNIX09QRU5BUElfVE9LRU4iLCJleHAiOjE3NDYxODc3MjN9.Nx2tA6x4q9hT2GweDX6hZZ_7KxajFVq5_rbId7vzX-aphIzGGqQUC934hai5N7_NJjfwDwGTb1d1dZ7U52nwvA';
         $this->client = new Client([
             'base_uri' => $this->baseUrl,
-            // 'verify' => storage_path('/certs/tele2_ca_bundle.pem'),
-            'verify' => '/home/narek/Documents/web/certificates/certificate.crt',
+            'verify' => storage_path('/certs/certificate.crt'),
+            // 'verify' => '/home/narek/Documents/web/certificates/certificate.crt',
             'headers' => [
                 'Accept' => 'application/json',
                 'Content-Type' => 'application/json',
