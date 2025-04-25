@@ -20,7 +20,9 @@ class AtsCrmIntegrationService
         $this->refreshToken = 'eyJhbGciOiJIUzUxMiJ9.eyJVc2VyRGV0YWlsc0ltcGwiOnsiY29tcGFueUlkIjoxOTk1MiwidXNlcklkIjo0MzgyMSwibG9naW4iOiI3OTUzNzA2MjU3MyJ9LCJzdWIiOiJSRUZSRVNIX09QRU5BUElfVE9LRU4iLCJleHAiOjE3NDYxODc3MjN9.Nx2tA6x4q9hT2GweDX6hZZ_7KxajFVq5_rbId7vzX-aphIzGGqQUC934hai5N7_NJjfwDwGTb1d1dZ7U52nwvA';
         $this->client = new Client([
             'base_uri' => $this->baseUrl,
-            'verify' => storage_path('/certs/certificate.crt'),
+            // 'verify' => storage_path('/certs/iqmtech.pem'),
+            'cert' => [storage_path('/certs/iqmtech.pem'),'iqmtechSecureKey987'],
+            'ssl_key' => [storage_path('/certs/iqmtech.key.pem'),'iqmtechSecureKey987'],
             // 'verify' => '/home/narek/Documents/web/certificates/certificate.crt',
             'headers' => [
                 'Accept' => 'application/json',
