@@ -397,7 +397,6 @@
 
         <?php
             $infoDatas = [
-                'Определение 1 000 номеров',
                 'Обзвон собранной базы нашим call-центром',
                 'Аналитика источников',
                 'Продающий скрипт на основе вашего оффера',
@@ -431,6 +430,7 @@
                                 <a href="" class="default-btn openModal" id="openModal">Начать работу</a>
                             </div>
                             <ul class="features-list">
+                                <li><i class="ri-check-line"></i>Определение <span class="red">1 000</span> номеров</li>
                                 @foreach ($infoDatas as $infoData)
                                     <li><i class="ri-check-line"></i>{{ $infoData }}</li>
                                 @endforeach
@@ -453,6 +453,7 @@
                                 <a href="" class="default-btn openModal" id="openModal">Начать работу</a>
                             </div>
                             <ul class="features-list">
+                                <li><i class="ri-check-line"></i>Определение <span class="red">3 000</span> номеров</li>
                                 @foreach ($infoDatas as $infoData)
                                     <li><i class="ri-check-line"></i>{{ $infoData }}</li>
                                 @endforeach
@@ -473,6 +474,7 @@
                                 <a href="" class="default-btn openModal" id="openModal">Начать работу</a>
                             </div>
                             <ul class="features-list">
+                                <li><i class="ri-check-line"></i>Определение <span class="red">10 000</span> номеров</li>
                                 @foreach ($infoDatas as $infoData)
                                     <li><i class="ri-check-line"></i>{{ $infoData }}</li>
                                 @endforeach
