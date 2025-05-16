@@ -414,30 +414,23 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-4 col-md-6">
                         <div class="single-pricing-table">
-                            <div class="pricing-header d-flex jc-sb">
-                                <h3>
-                                    {{-- <i class="ri-send-plane-line"></i>  --}}
-                                    Старт</h3>
-                                <h3 class="sale-btn">бонус</h3>
 
-                                {{-- <a class="default-btn">скидка 20%</a> --}}
+                            <div class="pricing-crd">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <h5 class="mb-0">Старт</h5>
+                                    <span class="pricing-badge-red">бонус</span>
+                                </div>
+                                <h2 class="fw-bold">110 000</h2>
+                                <p class="mb-0">110₽/номер<br>с обработкой call-центра</p>
                             </div>
-                            <div class="price">110 000 <span>₽</span></div>
-                            <div class="pricing-btn">
-                                <b><span>110 руб/номер с обработкой call-центра</span></b>
 
-                                {{-- <b><span>1 000 номеров с обработкой Call-центром</span></b>
-                                <span>номер 95 рублей</span> --}}
-                                <br /><br />
-                                <a href="" class="default-btn openModal" id="openModal">Начать работу</a>
-                            </div>
                             <ul class="features-list">
                                 <li><i class="ri-check-line"></i>Определение <span class="red">1 000</span> номеров</li>
                                 @foreach ($infoDatas as $infoData)
                                     <li><i class="ri-check-line"></i>{{ $infoData }}</li>
                                 @endforeach
                                 <li><i class="ri-check-line"></i>
-                                Бонус! Дарим 400 номеров с обработкой нашим call-центром при первой оплате.
+                                <span class="red">Бонус!</span> Дарим <span class="red">400</span> номеров с обработкой нашим call-центром при первой оплате.
                                 </li>
                             </ul>
                         </div>
@@ -445,17 +438,13 @@
 
                     <div class="col-lg-4 col-md-6">
                         <div class="single-pricing-table active">
-                            <div class="pricing-header d-flex jc-sb">
-                                <h3></i> Оптимальный</h3>
-                                <h3 class="sale-btn">выгодно</h3>
-                            </div>
-                             <div class="price">180 000 <span>₽</span></div>
-                           <div class="pricing-btn">
-                                    <b><span>90 руб/номер с обработкой call-центра</span></b>
-                                  {{-- <b><span>3 000 номеров с обработкой Call-центром</span></b>
-                                  <span>номер 85 рублей</span> --}}
-                                  <br />  <br />
-                                <a href="" class="default-btn openModal" id="openModal">Начать работу</a>
+                            <div class="pricing-crd-red">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <h5 class="mb-0">Стандарт</h5>
+                                    <span class="pricing-badge">выгодно</span>
+                                </div>
+                                <h2 class="fw-bold">180 000</h2>
+                                <p class="mb-0">90₽/номер<br>с обработкой call-центра</p>
                             </div>
                             <ul class="features-list">
                                 <li><i class="ri-check-line"></i>Определение <span class="red">2 000</span> номеров</li>
@@ -464,7 +453,7 @@
                                 @endforeach
                                 <li><i class="ri-check-line"></i>
                                     Поиск номеров конкурентов,
-                                    которых нет в открытом доступе (до 3 номеров)
+                                    которых нет в открытом доступе (до <span class="red">3</span> номеров)
                                 </li>
 
                             </ul>
@@ -473,15 +462,12 @@
 
                     <div class="col-lg-4 col-md-6">
                         <div class="single-pricing-table">
-                            <div class="pricing-header d-flex jc-sb">
-                                <h3>Бизнес PRO</h3>
-                                {{-- <h3 class="sale-btn">скидка 15%</h3> --}}
-                            </div>
-                            <div class="price">480 000 <span>₽</span></div>
-                            <div class="pricing-btn">
-                                 <b><span>80 руб/номер с обработкой call-центра</span></b>
-                                  <br />  <br />
-                                <a href="" class="default-btn openModal" id="openModal">Начать работу</a>
+                            <div class="pricing-crd">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <h5 class="mb-0">Бизнес Pro</h5>
+                                </div>
+                                <h2 class="fw-bold">480 000</h2>
+                                <p class="mb-0">80₽/номер<br>с обработкой call-центра</p>
                             </div>
                             <ul class="features-list">
                                 <li><i class="ri-check-line"></i>Определение <span class="red">6 000</span> номеров</li>
@@ -490,7 +476,7 @@
                                 @endforeach
                                  <li><i class="ri-check-line"></i>
                                     Поиск номеров конкурентов,
-                                    которых нет в открытом доступе (до 10 номеров)
+                                    которых нет в открытом доступе (до <span class="red">10</span> номеров)
                                  </li>
                             </ul>
                         </div>

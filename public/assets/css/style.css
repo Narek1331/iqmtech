@@ -5277,3 +5277,37 @@ Go Top CSS
     white-space: nowrap;
     letter-spacing: 1px;
   }
+
+    .pricing-crd-red{
+        background: linear-gradient(135deg, #f00062, #d10050);
+        color: white;
+        border-radius: 1rem;
+        padding: 1.5rem;
+    }
+
+    .pricing-crd {
+    /* background: linear-gradient(135deg, #f00062, #d10050); */
+    background: white;
+    color: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    border: 2px solid #d10050;
+    }
+
+    .pricing-badge {
+    background-color: white;
+    color: #d10050;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0.6rem;
+    font-size: 0.85rem;
+    }
+
+    .pricing-badge-red{
+        color: white;
+        background-color: #d10050;
+        font-weight: bold;
+        border-radius: 0.5rem;
+        padding: 0.25rem 0.6rem;
+        font-size: 0.85rem;
+    }
