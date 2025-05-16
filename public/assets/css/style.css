@@ -5279,7 +5279,7 @@ Go Top CSS
   }
 
     .pricing-crd-red{
-        background: linear-gradient(135deg, #f00062, #d10050);
+        background: linear-gradient(90deg, #D21163 0%, #D9230C 100%);
         color: white;
         border-radius: 1rem;
         padding: 1.5rem;
@@ -5311,3 +5311,6 @@ Go Top CSS
         padding: 0.25rem 0.6rem;
         font-size: 0.85rem;
     }
+.fs-10px {
+  font-size: 15px!important;
+}
