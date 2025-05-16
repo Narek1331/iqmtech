@@ -470,7 +470,7 @@
                                 </div>
                                 <h2 class="fw-bold">480 000</h2>
                                 <p class="mb-0 fs-15px">80₽/номер</p>
-                                <p style="margin-top: -12px!important" class="mb-0 fs-15px">с с обработкой call-центра</p>
+                                <p style="margin-top: -12px!important" class="mb-0 fs-15px">с обработкой call-центра</p>
                             </div>
                             <ul class="features-list">
                                 <li><i class="ri-check-line"></i>Определение <span class="red">6 000</span> номеров</li>
