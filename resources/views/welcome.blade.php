@@ -422,7 +422,7 @@
                                 </div>
                                 <h2 class="fw-bold">110 000</h2>
                                 <p class="fs-15px">110₽/номер</p>
-                                <p class="fs-15px">обработкой call-центра</p>
+                                <p class="fs-15px">с обработкой call-центра</p>
                             </div>
 
                             <ul class="features-list">
@@ -446,7 +446,7 @@
                                 </div>
                                 <h2 class="text-white fw-bold">180 000</h2>
                                 <p class="text-white fs-15px">90₽/номер</p>
-                                <p class="text-white fs-15px">обработкой call-центра</p>
+                                <p class="text-white fs-15px">с обработкой call-центра</p>
                             </div>
                             <ul class="features-list">
                                 <li><i class="ri-check-line"></i>Определение <span class="red">2 000</span> номеров</li>
@@ -470,7 +470,7 @@
                                 </div>
                                 <h2 class="fw-bold">480 000</h2>
                                 <p class="fs-15px">80₽/номер</p>
-                                <p class="fs-15px">с обработкой call-центра</p>
+                                <p class="fs-15px">с с обработкой call-центра</p>
                             </div>
                             <ul class="features-list">
                                 <li><i class="ri-check-line"></i>Определение <span class="red">6 000</span> номеров</li>
