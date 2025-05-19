@@ -10,7 +10,15 @@
         }
         else {
             event.preventDefault();
-            submitForm();
+            let checkAgree = document.getElementById('checkAgree');
+            if (checkAgree.checked) {
+                submitForm();
+
+            }else{
+                formError();
+                submitMSG(false, "Просим подтвердить своё согласие");
+
+            }
         }
     });
 

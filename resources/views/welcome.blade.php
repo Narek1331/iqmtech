@@ -853,6 +853,12 @@
                         <div class="form-group">
                           <!--<label for="phone_number">Номер телефона</label> -->
                           <input type="text" class="form-control phone-input" id="phone_number" placeholder="Телефон" required>
+                            <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="checkAgree">
+                            <label class="form-check-label" for="checkAgree">
+                                Выражаю согласие
+                            </label>
+                            </div>
                         </div>
 
 
@@ -861,7 +867,7 @@
                         </div>
 
                         <div class="form-group form-group-police">
-                            Нажимая на кнопку, вы даёте согласие на обработку персональных данных в соответствии с <a href="/privacy-policy">политикой конфиденциальности</a>
+                            Нажимая на кнопку, вы даёте <a href="/consent">Согласие на обработку персональных данных</a> в соответствии с <a href="/privacy-policy">политикой конфиденциальности</a>
                         </div>
 
                         <div class="form-group text-center">
