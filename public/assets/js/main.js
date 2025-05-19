@@ -404,7 +404,13 @@ jQuery(function ($) {
     acceptBtn.addEventListener('click', function () {
       localStorage.setItem('cookiesAccepted', 'true');
       cookieConsent.style.setProperty('display', 'none', 'important');
-      console.log(cookieConsent.style.display)
     });
 
+
+
 }(jQuery));
+
+function consentPersonalData(){
+    let checkAgree = document.getElementById('checkAgree');
+    checkAgree.checked = true;
+}
