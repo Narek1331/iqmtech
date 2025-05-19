@@ -67,4 +67,9 @@
         }
         $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
     }
+
+    function consentPersonalData(){
+        let checkAgree = document.getElementById('checkAgree');
+        checkAgree.checked = true;
+    }
 }(jQuery)); // End of use strict

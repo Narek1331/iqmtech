@@ -1,9 +1,9 @@
 jQuery(function ($) {
     'use strict';
-	
+
 	// Header Sticky
 	$(window).on('scroll',function() {
-		if ($(this).scrollTop() > 30){  
+		if ($(this).scrollTop() > 30){
 			$('.navbar-area').addClass("is-sticky");
 		}
 		else{
@@ -15,7 +15,7 @@ jQuery(function ($) {
 	jQuery('.mean-menu').meanmenu({
 		meanScreenWidth: "1199"
 	});
-	
+
 	// Others Option For Responsive JS
 	$(".others-option-for-responsive .dot-menu").on("click", function(){
 		$(".others-option-for-responsive .container .container").toggleClass("active");
@@ -164,7 +164,7 @@ jQuery(function ($) {
 		autoplay: true,
 		items: 1,
 	});
-	
+
 	// Testimonials Slides
 	$('.testimonials-slides').owlCarousel({
 		loop: true,
@@ -202,7 +202,7 @@ jQuery(function ($) {
 		margin: 25,
 		autoplayHoverPause: true,
 		autoplay: true,
-		
+
 		responsive: {
 			0: {
 				items: 1
@@ -281,7 +281,7 @@ jQuery(function ($) {
 		margin: 30,
 		autoplayHoverPause: true,
 		autoplay: true,
-		
+
 		responsive: {
 			0: {
 				items: 2
@@ -305,14 +305,14 @@ jQuery(function ($) {
 		fixedContentPos: false
 	});
 
-	// Count Time 
+	// Count Time
 	function makeTimer() {
-		var endTime = new Date("September 20, 2025 17:00:00 PDT");			
+		var endTime = new Date("September 20, 2025 17:00:00 PDT");
 		var endTime = (Date.parse(endTime)) / 1000;
 		var now = new Date();
 		var now = (Date.parse(now) / 1000);
 		var timeLeft = endTime - now;
-		var days = Math.floor(timeLeft / 86400); 
+		var days = Math.floor(timeLeft / 86400);
 		var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
 		var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600 )) / 60);
 		var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
@@ -359,11 +359,11 @@ jQuery(function ($) {
 		var scrolled = $(window).scrollTop();
 		if (scrolled > 600) $('.go-top').addClass('active');
 		if (scrolled < 600) $('.go-top').removeClass('active');
-	});  
+	});
 	$('.go-top').on('click', function() {
 		$("html, body").animate({ scrollTop: "0" },  500);
 	});
-	
+
 	// Preloader JS
 	jQuery(window).on('load',function(){
 		jQuery(".preloader").fadeOut(500);
@@ -388,5 +388,23 @@ jQuery(function ($) {
 	});
 
 	$(".phone-input").inputmask({"mask": "+7 (999)-999-9999"});
+
+    const cookieConsent = document.getElementById('cookieConsent');
+    const acceptBtn = document.getElementById('acceptCookies');
+
+     if (localStorage.getItem('cookiesAccepted') == 'true')
+    {
+      cookieConsent.style.setProperty('display', 'none', 'important');
+    }
+
+    if (!localStorage.getItem('cookiesAccepted')) {
+      cookieConsent.style.display = 'flex';
+    }
+
+    acceptBtn.addEventListener('click', function () {
+      localStorage.setItem('cookiesAccepted', 'true');
+      cookieConsent.style.setProperty('display', 'none', 'important');
+      console.log(cookieConsent.style.display)
+    });
 
 }(jQuery));

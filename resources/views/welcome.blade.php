@@ -854,7 +854,7 @@
                           <!--<label for="phone_number">Номер телефона</label> -->
                           <input type="text" class="form-control phone-input" id="phone_number" placeholder="Телефон" required>
                             <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="checkAgree">
+                            <input name="checkAgree" class="form-check-input" type="checkbox" value="" id="checkAgree">
                             <label class="form-check-label" for="checkAgree">
                                 Выражаю согласие
                             </label>
@@ -867,7 +867,7 @@
                         </div>
 
                         <div class="form-group form-group-police">
-                            Нажимая на кнопку, вы даёте <a href="/consent">Согласие на обработку персональных данных</a> в соответствии с <a href="/privacy-policy">политикой конфиденциальности</a>
+                            <span onclick="consentPersonalData()">Нажимая на кнопку, вы даёте</span> <a href="/consent">Согласие на обработку персональных данных</a> в соответствии с <a href="/privacy-policy">политикой конфиденциальности</a>
                         </div>
 
                         <div class="form-group text-center">
@@ -877,6 +877,13 @@
 
                 </div>
             </div>
+        </div>
+        <div id="cookieConsent" class="fixed-bottom bg-dark text-white p-3 d-flex justify-content-between align-items-center" style="z-index: 1050; display: none;">
+        <div class="me-3">
+            Данный сайт использует файлы cookie для улучшения работы сайта и анализа сетевого трафика.
+            <a href="https://iqmtech.ru/privacy-policy" class="text-white text-decoration-underline">Подробнее</a>
+        </div>
+        <button id="acceptCookies" class="btn btn-light">Принять все</button>
         </div>
 
         <!-- Links of JS files -->
