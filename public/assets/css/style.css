@@ -5061,6 +5061,7 @@ Go Top CSS
   cursor: pointer;
   bottom: -100px;
   right: 20px;
+  top: 650px;
   color: var(--white-color);
   background-color: var(--main-color);
   z-index: 4;
