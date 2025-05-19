@@ -217,7 +217,7 @@
                         <div class="about-content">
                             <span>Работаем с крупными Data-центрами</span>
                              <h3>Увеличиваем количество лидов<br/> с сайта <b class="red">до 300%</b></h3>
-                            <p>Находим заинтересованных клиентов в режиме реального времени всего от 134 рублей за контакт!</p>
+                            <p>Находим заинтересованных клиентов в режиме реального времени всего от 40 рублей за контакт!</p>
                             <p>Мы используем абсолютно легальные и не спамные технологии, соответствующие закону о рекламе.</p>
                             <p>Наше партнерство с операторами Big Data позволяет нам отслеживать поведение людей на разных уровнях и выявлять тех, кто действительно нуждается в ваших товарах или услугах.</p>
                             <div class="about-btn">
@@ -235,17 +235,17 @@
         <div class="fun-fact-area bg-two pt-100 pb-75">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-lg-3 col-sm-6 col-6">
+                    <div class="col-lg-4 col-sm-6 col-6">
                         <div class="single-funfact-card">
                             <h3>
                                 <span class="odometer" data-count="300">00</span>
                                 <span class="small-text">%</span>
                             </h3>
-                            <p>Коэффициент <br>конверсии</p>
+                            <p>средний <br>ROI</p>
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-sm-6 col-6">
+                    <div class="col-lg-4 col-sm-6 col-6">
                         <div class="single-funfact-card">
                             <h3>
                                 <span class="odometer" data-count="2000">00</span>
@@ -255,7 +255,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-sm-6 col-6">
+                    {{-- <div class="col-lg-3 col-sm-6 col-6">
                         <div class="single-funfact-card">
                             <h3>
                                 <span class="odometer" data-count="140">00</span>
@@ -263,15 +263,15 @@
                             </h3>
                             <p>Аудитория <br>кампаний</p>
                         </div>
-                    </div>
+                    </div> --}}
 
-                    <div class="col-lg-3 col-sm-6 col-6">
+                    <div class="col-lg-4 col-sm-6 col-6">
                         <div class="single-funfact-card">
                             <h3>
-                                <span class="odometer" data-count="250">00</span>
+                                <span class="odometer" data-count="80">00</span>
                                 <span class="small-text">тыс</span>
                             </h3>
-                            <p>Готовых <br>сегментов</p>
+                            <p>горячих лидов<br>из 1000 контактов</p>
                         </div>
                     </div>
                 </div>
@@ -350,7 +350,7 @@
                         <div class="why-choose-us-content wrap-color" data-aos="fade-left" data-aos-delay="50" data-aos-duration="500" data-aos-once="true">
                             <span>Получаем портрет клиента</span>
                             <h3>Как работает Big Data</h3>
-                            <p>Мы разработали аналитический продукт, который позволяет нашим клиентам генерировать качественные лиды непосредственно со своих сайтов.</p>
+                            <p>Мы разработали аналитический продукт, который позволяет нашим клиентам генерировать качественные лиды.</p>
                                <div class="choose-us-inner-box">
                                 <div class="icon">
                                     <i class="ri-code-line"></i>
@@ -582,7 +582,7 @@
                                             <i class="ri-cast-line"></i>
                                         </div>
                                         <h4>Мгновенный обмен данными</h4>
-                                        <p>Когда посетитель заходит на ваш сайт, наша система автоматически считывает его cookies (без сохранения персональных данных) и отправляет анонимизированный запрос партнерам.</p>
+                                        <p>Когда посетитель заходит сайт, наша система автоматически считывает его cookies (без сохранения персональных данных) и отправляет анонимизированный запрос партнерам.</p>
                                     </div>
                                 </div>
                                 <div class="col-lg-12 col-sm-12">
@@ -590,8 +590,8 @@
                                         <div class="icon">
                                             <i class="ri-focus-2-line"></i>
                                         </div>
-                                        <h4>Передача контакта в реальном времени</h4>
-                                        <p>Если поставщик подтверждает наличие номера, мы моментально передаем его в работу в формате «теплого» клиента — без задержек и ручной обработки.</p>
+                                        <h4>Передача клиентов в реальном времени</h4>
+                                        <p>Данные по клиентам всегда актуальные, так как выгружаются в наш сервис IQm.Tech в течение 24 часов после контакта с конкурентом! Далее, наши специалисты их квалифицируют и отправляют вам в режиме реального времени.</p>
                                     </div>
                                 </div>
                             </div>
@@ -625,13 +625,21 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-6 col-sm-6">
                                     <div class="faq-circlechart-box">
-                                        <div class="circlechart" data-percentage="95"><svg class="circle-chart" viewBox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg"><circle class="circle-chart__background" cx="16.9" cy="16.9" r="15.9"></circle><circle class="circle-chart__circle success-stroke" stroke-dasharray="90,100" cx="16.9" cy="16.9" r="15.9"></circle><g class="circle-chart__info">   <text class="circle-chart__percent" x="17.9" y="17.1">95%</text> </g></svg></div>
+                                        <div class="circlechart" data-percentage="95">
+                                            <svg class="circle-chart" viewBox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg">
+                                                <circle class="circle-chart__background" cx="16.9" cy="16.9" r="15.9"></circle>
+                                                <circle class="circle-chart__circle success-stroke" stroke-dasharray="90,100" cx="16.9" cy="16.9" r="15.9"></circle>
+                                                <g class="circle-chart__info">
+                                                    {{-- <text class="circle-chart__percent" x="17.9" y="17.1">95%</text>  --}}
+                                                </g>
+                                            </svg>
+                                        </div>
                                         <span>Довольных <br >клиентов</span>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-sm-6">
                                     <div class="faq-circlechart-box">
-                                        <div class="circlechart" data-percentage="90"><svg class="circle-chart" viewBox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg"><circle class="circle-chart__background" cx="16.9" cy="16.9" r="15.9"></circle><circle class="circle-chart__circle success-stroke" stroke-dasharray="75,100" cx="16.9" cy="16.9" r="15.9"></circle><g class="circle-chart__info">   <text class="circle-chart__percent" x="17.9" y="17.1">90%</text> </g></svg></div>
+                                        <div class="circlechart" data-percentage="90"><svg class="circle-chart" viewBox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg"><circle class="circle-chart__background" cx="16.9" cy="16.9" r="15.9"></circle><circle class="circle-chart__circle success-stroke" stroke-dasharray="75,100" cx="16.9" cy="16.9" r="15.9"></circle><g class="circle-chart__info"></g></svg></div>
                                         <span>Клиентов с нами <br />больше года</span>
                                     </div>
                                 </div>
@@ -670,8 +678,8 @@
                                     </button>
                                     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#FaqAccordion">
                                         <div class="accordion-body">
-                                            <p>Минимум: 1 лид в день.</p>
-                                            <p>Максимум: Нет ограничений (зависит от емкости рынка).</p>
+                                            {{-- <p>Минимум: 1 лид в день.</p> --}}
+                                            <p>Нет ограничений (зависит от емкости рынка).</p>
                                         </div>
                                     </div>
                                 </div>
