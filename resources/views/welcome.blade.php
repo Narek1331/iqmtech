@@ -881,7 +881,7 @@
         <div id="cookieConsent" class="fixed-bottom bg-light text-dark p-3 d-flex justify-content-between align-items-center" style="z-index: 1050; display: none;">
             <div class="me-3">
                 Данный сайт использует файлы cookie для улучшения работы сайта и анализа сетевого трафика.
-                <a href="https://iqmtech.ru/privacy-policy" class="text-white text-decoration-underline">Подробнее</a>
+                <a href="https://iqmtech.ru/privacy-policy" class="text-decoration-underline">Подробнее</a>
             </div>
             <button id="acceptCookies" class="default-btn">Принять все</button>
         </div>
