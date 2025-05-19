@@ -878,13 +878,16 @@
                 </div>
             </div>
         </div>
-        <div id="cookieConsent" class="fixed-bottom bg-light text-dark p-3 d-flex justify-content-between align-items-center" style="z-index: 1050; display: none;">
-            <div class="me-3">
+     <div id="cookieConsent" class="text-center fixed-bottom bg-light text-dark p-3 d-flex justify-content-between align-items-center" style="z-index: 1050; display: none;">
+        <div class="flex-grow-1 d-flex justify-content-center">
+            <div class="text-center">
                 Данный сайт использует файлы cookie для улучшения работы сайта и анализа сетевого трафика.
                 <a href="https://iqmtech.ru/privacy-policy" class="text-decoration-underline">Подробнее</a>
             </div>
-            <button id="acceptCookies" class="default-btn">Принять все</button>
         </div>
+        <button style="border: none!important" id="acceptCookies" class="default-btn ms-3">Принять все</button>
+    </div>
+
 
         <!-- Links of JS files -->
         <script data-cfasync="false" src="5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/assets/js/jquery.min.js"></script>
