@@ -5315,3 +5315,11 @@ Go Top CSS
 .fs-10px {
   font-size: 15px!important;
 }
+
+input[type="checkbox"] {
+  accent-color:#FF1670;
+}
+
+#checkAgree:checked {
+  background-color:#FF1670;
+}

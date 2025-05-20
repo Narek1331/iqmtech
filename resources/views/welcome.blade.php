@@ -851,8 +851,14 @@
                         @csrf
 
                         <div class="form-group">
-                         <input type="text" class="form-control phone-input" id="phone_number" placeholder="Телефон" required>
-
+                          <!--<label for="phone_number">Номер телефона</label> -->
+                          <input type="text" class="form-control phone-input" id="phone_number" placeholder="Телефон" required>
+                            {{-- <div class="form-check">
+                            <input name="checkAgree" class="form-check-input" type="checkbox" value="" id="checkAgree">
+                            <label class="form-check-label" for="checkAgree">
+                                Выражаю согласие
+                            </label>
+                            </div> --}}
                         </div>
 
 
@@ -862,13 +868,10 @@
 
                         <div class="form-group form-group-police">
                             <span onclick="consentPersonalData()">
-                            <div class="form-check">
-                            <input name="checkAgree" class="form-check-input" type="checkbox" value="" id="checkAgree">
-                            <label class="form-check-label" for="checkAgree">
+                                 <input name="checkAgree" class="form-check-input" type="checkbox" value="" id="checkAgree">
                                 Выражаю
-                            </label>
-                            </div>
-                            </span> <a href="/consent">Согласие на обработку персональных данных</a> в соответствии с <a href="/privacy-policy">политикой конфиденциальности</a>
+                            </span>
+                                <a href="/consent">Согласие на обработку персональных данных</a> в соответствии с <a href="/privacy-policy">политикой конфиденциальности</a>
                         </div>
 
                         <div class="form-group text-center">
