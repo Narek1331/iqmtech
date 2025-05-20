@@ -882,15 +882,7 @@
                 </div>
             </div>
         </div>
-     <div id="cookieConsent" class="text-center fixed-bottom bg-light text-dark p-3 d-flex justify-content-between align-items-center" style="z-index: 1050; display: none;">
-        <div class="flex-grow-1 d-flex justify-content-center">
-            <div class="text-center">
-                Данный сайт использует файлы cookie для улучшения работы сайта и анализа сетевого трафика.
-                <a href="https://iqmtech.ru/privacy-policy" class="text-decoration-underline">Подробнее</a>
-            </div>
-        </div>
-        <button style="border: none!important" id="acceptCookies" class="default-btn ms-3">Принять все</button>
-    </div>
+            @include('partials.cookie-alert')
 
 
         <!-- Links of JS files -->

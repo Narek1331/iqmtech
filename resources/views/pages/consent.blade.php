@@ -310,6 +310,8 @@
                 </div>
             </div>
         </footer>
+                @include('partials.cookie-alert')
+
         <!-- End Footer Area -->
 
         <!-- Start Go Top Area -->
