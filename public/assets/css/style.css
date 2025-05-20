@@ -5320,6 +5320,43 @@ input[type="checkbox"] {
   accent-color:#FF1670;
 }
 
+.form-check-input[type="checkbox"]
+{
+    border: none!important;
+}
+
 #checkAgree:checked {
   background-color:#FF1670;
+  border: none!important;
 }
+
+@media (max-width: 790px) {
+  #acceptCookies {
+    font-size: 10px!important;
+  }
+}
+
+@media (max-width: 750px) {
+  #acceptCookies {
+    font-size: 6px!important;
+  }
+}
+
+@media (max-width: 460px) {
+  .checkAgreeGroup {
+    font-size: 10px!important;
+  }
+}
+
+@media (max-width: 390px) {
+  .checkAgreeGroup {
+    font-size: 8px!important;
+  }
+}
+
+@media (max-width: 330px) {
+  .checkAgreeGroup {
+    font-size: 5px!important;
+  }
+}
+

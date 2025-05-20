@@ -866,9 +866,9 @@
                           <button type="submit" class="btn default-btn">Отправить</button>
                         </div>
 
-                        <div class="form-group form-group-police">
+                        <div class="form-group form-group-police checkAgreeGroup">
                             <span onclick="consentPersonalData()">
-                                 <input name="checkAgree" class="form-check-input" type="checkbox" value="" id="checkAgree">
+                                 <input name="checkAgree" class="" type="checkbox" value="" id="checkAgree">
                                 Выражаю
                             </span>
                                 <a href="/consent">Согласие на обработку персональных данных</a> в соответствии с <a href="/privacy-policy">политикой конфиденциальности</a>
