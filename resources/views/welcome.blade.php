@@ -217,7 +217,7 @@
                         <div class="about-content">
                             <span>Работаем с крупными Data-центрами</span>
                              <h3>Увеличиваем количество лидов<br/> с сайта <b class="red">до 300%</b></h3>
-                            <p>Находим заинтересованных клиентов в режиме реального времени всего от 40 рублей за контакт!</p>
+                            <p>Находим заинтересованных клиентов всего от 40 рублей за контакт!</p>
                             <p>Мы используем абсолютно легальные и не спамные технологии, соответствующие закону о рекламе.</p>
                             <p>Наше партнерство с операторами Big Data позволяет нам отслеживать поведение людей на разных уровнях и выявлять тех, кто действительно нуждается в ваших товарах или услугах.</p>
                             <div class="about-btn">
@@ -489,7 +489,7 @@
                 <div class="services-details-quote">
                     <p style="text-align: center;">Тариф
                     <b class="size-larger">Демо</b>
-                    - 1 000 номеров без обработки Call-центром за <b class="red">55 000 рублей</b> / стоимость номера 55 рублей</p>
+                    - 1 000 номеров без обработки Call-центром за <b class="red">65 000 рублей</b></p>
                     </div>
                 </div>
             </div>
@@ -582,7 +582,7 @@
                                             <i class="ri-cast-line"></i>
                                         </div>
                                         <h4>Мгновенный обмен данными</h4>
-                                        <p>Когда посетитель заходит сайт, наша система автоматически считывает его cookies (без сохранения персональных данных) и отправляет анонимизированный запрос партнерам.</p>
+                                        <p>Когда посетитель заходит на сайт, наша система автоматически считывает его cookies (без сохранения персональных данных) и отправляет анонимизированный запрос партнерам.</p>
                                     </div>
                                 </div>
                                 <div class="col-lg-12 col-sm-12">
@@ -591,7 +591,7 @@
                                             <i class="ri-focus-2-line"></i>
                                         </div>
                                         <h4>Передача клиентов в реальном времени</h4>
-                                        <p>Данные по клиентам всегда актуальные, так как выгружаются в наш сервис IQm.Tech в течение 24 часов после контакта с конкурентом! Далее, наши специалисты их квалифицируют и отправляют вам в режиме реального времени.</p>
+                                        <p>Данные по клиентам всегда актуальные, так как выгружаются в наш сервис IQm.Tech в течение 24 часов после контакта с конкурентом! Далее, наши специалисты их квалифицируют и отправляют вам .</p>
                                     </div>
                                 </div>
                             </div>
@@ -689,7 +689,7 @@
                                     </button>
                                     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#FaqAccordion">
                                         <div class="accordion-body">
-                                            <p>В ваш личный кабинет — после проверки колл-центром.</p>
+                                            <p>Передаём заявки сразу в режиме реального времени, через чат в Telegram или форму CRM.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -699,10 +699,10 @@
                                     </button>
                                     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#FaqAccordion">
                                         <div class="accordion-body">
-                                            <p>Да, вы выбираете:</p>
-                                            <p>Ежедневно (кроме праздников).</p>
+                                            <p>Да, расписание настраивается максимально гибко, можно запускать и отключать сервис в любой день недели</p>
+                                            {{-- <p>Ежедневно (кроме праздников).</p>
                                             <p>Только будние дни.</p>
-                                            <p>Исключить субботу или воскресенье.</p>
+                                            <p>Исключить субботу или воскресенье.</p> --}}
                                         </div>
                                     </div>
                                 </div>
@@ -851,14 +851,8 @@
                         @csrf
 
                         <div class="form-group">
-                          <!--<label for="phone_number">Номер телефона</label> -->
-                          <input type="text" class="form-control phone-input" id="phone_number" placeholder="Телефон" required>
-                            <div class="form-check">
-                            <input name="checkAgree" class="form-check-input" type="checkbox" value="" id="checkAgree">
-                            <label class="form-check-label" for="checkAgree">
-                                Выражаю согласие
-                            </label>
-                            </div>
+                         <input type="text" class="form-control phone-input" id="phone_number" placeholder="Телефон" required>
+
                         </div>
 
 
@@ -867,7 +861,14 @@
                         </div>
 
                         <div class="form-group form-group-police">
-                            <span onclick="consentPersonalData()">Нажимая на кнопку, вы даёте</span> <a href="/consent">Согласие на обработку персональных данных</a> в соответствии с <a href="/privacy-policy">политикой конфиденциальности</a>
+                            <span onclick="consentPersonalData()">
+                            <div class="form-check">
+                            <input name="checkAgree" class="form-check-input" type="checkbox" value="" id="checkAgree">
+                            <label class="form-check-label" for="checkAgree">
+                                Выражаю
+                            </label>
+                            </div>
+                            </span> <a href="/consent">Согласие на обработку персональных данных</a> в соответствии с <a href="/privacy-policy">политикой конфиденциальности</a>
                         </div>
 
                         <div class="form-group text-center">

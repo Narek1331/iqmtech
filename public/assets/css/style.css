@@ -1138,7 +1138,7 @@ Funfact Area CSS
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  right: -3px;
+  left: -40px;
   width: 30px;
   height: 1px;
   background-color: var(--main-color);
