@@ -882,7 +882,7 @@
                 </div>
             </div>
         </div>
-            @include('partials.cookie-alert')
+        @include('partials.cookie-alert')
 
 
         <!-- Links of JS files -->

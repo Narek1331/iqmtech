@@ -5330,17 +5330,7 @@ input[type="checkbox"] {
   border: none!important;
 }
 
-@media (max-width: 790px) {
-  #acceptCookies {
-    font-size: 10px!important;
-  }
-}
 
-@media (max-width: 750px) {
-  #acceptCookies {
-    font-size: 6px!important;
-  }
-}
 
 @media (max-width: 460px) {
   .checkAgreeGroup {
