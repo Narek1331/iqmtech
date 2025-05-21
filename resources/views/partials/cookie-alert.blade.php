@@ -7,7 +7,7 @@
             </div>
             <div class="col-md-3 text-center text-md-end">
                 <button style="border: none!important" id="acceptCookies" class="default-btn btn btn-primary">
-                Принять все
+                Принять
                 </button>
             </div>
         </div>
