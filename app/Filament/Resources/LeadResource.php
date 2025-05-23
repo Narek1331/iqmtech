@@ -22,6 +22,7 @@ use Filament\Tables\Columns\{
     TextInputColumn,
     SelectColumn
 };
+use Filament\Tables\Filters\SelectFilter;
 
 class LeadResource extends Resource
 {
@@ -88,7 +89,27 @@ class LeadResource extends Resource
 
             ])
             ->filters([
-                //
+                SelectFilter::make('status_id')
+                ->label('Статус')
+                ->options(function () {
+                    return Status::all()->mapWithKeys(function ($status) {
+                        $colorDot = match ($status->color) {
+                            'success' => '🟢',
+                            'primary' => '🔵',
+                            'warning' => '🟡',
+                            'danger'  => '🔴',
+                            'gray'    => '⚪️',
+                            default   => '⚪️',
+                        };
+                        return [$status->id => $colorDot . ' ' . $status->name];
+                    });
+                })
+                ->query(function ($query, $data) {
+                    if(isset($data['value']) && $data['value'])
+                    {
+                        $query->where('status_id', $data['value']);
+                    }
+                })
             ])
             ->actions([])
             ->bulkActions([])
