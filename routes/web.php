@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
+use Illuminate\Support\Facades\Artisan;
 
 Route::get('/', function () {
     return view('welcome');
@@ -23,6 +24,7 @@ Route::post('/contact', [ContactController::class, 'sendEmail']);
 
 
 Route::get('/test', function () {
-    $service = new \App\Services\AtsCrmIntegrationService();
-    dd($service->refreshAccessToken());
+        Artisan::call('migrate');
+    // $service = new \App\Services\AtsCrmIntegrationService();
+    // dd($service->refreshAccessToken());
 });
