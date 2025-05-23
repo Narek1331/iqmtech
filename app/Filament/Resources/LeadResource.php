@@ -189,7 +189,7 @@ class LeadResource extends Resource
                     }
                 }),
                 SelectFilter::make('project')
-                ->label('Проекту')
+                ->label('Проект')
                 ->options(function () {
                     return Project::where('user_id',auth()->user()->id)
                     ->get()->pluck('name','id');
