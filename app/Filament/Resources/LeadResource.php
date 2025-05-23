@@ -91,28 +91,7 @@ class LeadResource extends Resource
 
             ])
             ->filters([
-                SelectFilter::make('status_id')
-                ->label('Статус')
-                ->options(function () {
-                    return Status::all()->mapWithKeys(function ($status) {
-                        $colorDot = match ($status->color) {
-                            'success' => '🟢',
-                            'primary' => '🔵',
-                            'warning' => '🟡',
-                            'danger'  => '🔴',
-                            'gray'    => '⚪️',
-                            default   => '⚪️',
-                        };
-                        return [$status->id => $colorDot . ' ' . $status->name];
-                    });
-                })
-                ->query(function ($query, $data) {
-                    if(isset($data['value']) && $data['value'])
-                    {
-                        $query->where('status_id', $data['value']);
-                    }
-                }),
-                Filter::make('date_filter')
+                                Filter::make('date_filter')
                 ->form([
                     Forms\Components\Grid::make(2)
                         ->schema([
@@ -175,6 +154,27 @@ class LeadResource extends Resource
                     }
 
                     return $indicators;
+                }),
+                SelectFilter::make('status_id')
+                ->label('Статус')
+                ->options(function () {
+                    return Status::all()->mapWithKeys(function ($status) {
+                        $colorDot = match ($status->color) {
+                            'success' => '🟢',
+                            'primary' => '🔵',
+                            'warning' => '🟡',
+                            'danger'  => '🔴',
+                            'gray'    => '⚪️',
+                            default   => '⚪️',
+                        };
+                        return [$status->id => $colorDot . ' ' . $status->name];
+                    });
+                })
+                ->query(function ($query, $data) {
+                    if(isset($data['value']) && $data['value'])
+                    {
+                        $query->where('status_id', $data['value']);
+                    }
                 }),
                 SelectFilter::make('page')
                 ->label('Источник')
