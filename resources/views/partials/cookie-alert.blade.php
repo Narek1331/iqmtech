@@ -2,12 +2,12 @@
     <div class="container">
         <div class="row align-items-center text-center text-md-start">
             <div class="col-md-9 mb-2 mb-md-0">
-                Данный сайт использует файлы cookie для улучшения работы сайта и анализа сетевого трафика.
+                Текст уведомления заменить на "Мы используем файлы cookie для улучшения работы сайта и анализа сетевого трафика. Продолжая пользоваться сайтом, вы соглашаетесь с политикой использования cookie.
                 <a href="https://iqmtech.ru/privacy-policy" class="text-decoration-underline">Подробнее</a>
             </div>
             <div class="col-md-3 text-center text-md-end">
                 <button style="border: none!important" id="acceptCookies" class="default-btn btn btn-primary">
-                Принять
+                Согласен
                 </button>
             </div>
         </div>
