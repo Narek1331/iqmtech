@@ -39,6 +39,9 @@ return new class extends Migration
             $table->decimal('latitude', 10, 8)->nullable();
             $table->decimal('longitude', 11, 8)->nullable();
 
+            $table->text('comment')->nullable();
+            $table->bigInteger('status_id')->nullable();
+
             $table->timestamps();
 
             $table->foreign('user_id')

@@ -36,6 +36,8 @@ class Data extends Model
         'mobile_operator',
         'address',
         'age',
+        'comment',
+        'status_id'
     ];
 
     public function user()
@@ -46,6 +48,11 @@ class Data extends Model
     public function project()
     {
         return $this->belongsTo(Project::class,'project_id','id');
+    }
+
+    public function status()
+    {
+        return $this->belongsTo(DataStatus::class,'status_id','id');
     }
 
 }
