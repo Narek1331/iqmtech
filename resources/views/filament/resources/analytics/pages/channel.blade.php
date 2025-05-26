@@ -21,7 +21,11 @@
                     <tr>
                         @foreach ($datas as $data)
                             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                                {{ $data }}
+                                @if (filter_var($data, FILTER_VALIDATE_URL))
+                                    {{ $this->getBaseDomain($data) }}
+                                @else
+                                    {{ $data }}
+                                @endif
                             </td>
                         @endforeach
                     </tr>

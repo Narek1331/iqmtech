@@ -60,4 +60,21 @@ class Channel extends Page
 
         return $datas;
     }
+
+    public function getBaseDomain(string $url): ?string
+    {
+        if (!filter_var($url, FILTER_VALIDATE_URL)) {
+            return null;
+        }
+
+        $parsedUrl = parse_url($url);
+
+        $host = $parsedUrl['host'] ?? null;
+
+        if ($host && str_starts_with($host, 'www.')) {
+            $host = substr($host, 4);
+        }
+
+        return $host;
+    }
 }
