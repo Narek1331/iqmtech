@@ -78,6 +78,15 @@ class AnalyticsResource extends Resource
                         $recordId = $record->id;
 
                         return "/app/analytics/$recordId/daily";
+                    }),
+
+                Action::make('Общая ЭФФЕКТИВНОСТЬ')
+                    ->label('Общая ЭФФЕКТИВНОСТЬ')
+                    ->color('warning')
+                    ->url(function($record){
+                        $recordId = $record->id;
+
+                        return "/app/analytics/$recordId/channel";
                     })
             ])
             ->bulkActions([]);
@@ -96,7 +105,8 @@ class AnalyticsResource extends Resource
             'index' => Pages\ListAnalytics::route('/'),
             'annual' => Pages\Annual::route('/{record}/annual'),
             'monthly' => Pages\Monthly::route('/{record}/monthly'),
-            'daily' => Pages\Daily::route('/{record}/daily')
+            'daily' => Pages\Daily::route('/{record}/daily'),
+            'channel' => Pages\Channel::route('/{record}/channel')
 
         ];
     }
