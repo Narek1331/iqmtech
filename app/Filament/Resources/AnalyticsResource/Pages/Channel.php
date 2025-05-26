@@ -16,7 +16,7 @@ class Channel extends Page
 {
     protected static string $resource = AnalyticsResource::class;
 
-    protected static string $view = 'filament.resources.analytics.pages.monthly';
+    protected static string $view = 'filament.resources.analytics.pages.channel';
 
     public function getTitle(): string
     {
