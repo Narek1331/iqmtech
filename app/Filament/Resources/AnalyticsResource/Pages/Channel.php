@@ -41,7 +41,7 @@ class Channel extends Page
 
          $datas = DB::table('data')
         ->selectRaw("
-            page as page,
+            TRIM(LEADING 'www.' FROM SUBSTRING_INDEX(SUBSTRING_INDEX(page, '/', 3), '/', -1)) as domain,
             COUNT(*) as total_count,
             SUM(CASE WHEN status_id = 1 THEN 1 ELSE 0 END) as status_1_count,
             SUM(CASE WHEN status_id = 2 THEN 1 ELSE 0 END) as status_2_count,
@@ -55,8 +55,9 @@ class Channel extends Page
         ")
         ->where('project_id', $recordId)
         ->whereYear('created_at', now()->year)
-        ->groupBy('page')
+        ->groupByRaw("TRIM(LEADING 'www.' FROM SUBSTRING_INDEX(SUBSTRING_INDEX(page, '/', 3), '/', -1))")
         ->get();
+
 
         return $datas;
     }
