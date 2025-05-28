@@ -26,6 +26,8 @@ use Filament\Tables\Columns\{
 use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Filters\Filter;
 use Carbon\Carbon;
+use pxlrbt\FilamentExcel\Actions\Tables\ExportBulkAction;
+
 class LeadResource extends Resource
 {
     use GetHelper;
@@ -56,16 +58,19 @@ class LeadResource extends Resource
                 TextColumn::make('created_at')
                 ->label('Дата')
                 ->sortable()
+                ->toggleable()
                 ->dateTime(),
 
                 TextColumn::make('page')
                 ->label('Источник')
                 ->sortable()
+                ->toggleable()
                 ->searchable(),
 
                 TextColumn::make('phone')
                 ->label('Телефон')
                 ->sortable()
+                ->toggleable()
                 ->searchable(),
 
                 SelectColumn::make('status_id')
@@ -82,9 +87,11 @@ class LeadResource extends Resource
                         };
                         return [$status->id => $colorDot . ' ' . $status->name];
                     });
-                }),
+                })
+                ->toggleable(),
 
                 TextInputColumn::make('comment')
+                ->toggleable()
                 ->label('Комментарий'),
 
 
@@ -202,7 +209,10 @@ class LeadResource extends Resource
                 }),
             ])
             ->actions([])
-            ->bulkActions([])
+            ->bulkActions([
+                ExportBulkAction::make()
+
+            ])
             ->defaultSort('created_at', 'desc');
 
     }
