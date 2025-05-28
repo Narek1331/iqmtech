@@ -4,7 +4,10 @@ namespace App\Filament\Admin\Resources;
 
 use App\Filament\Admin\Resources\ProjectResource\Pages;
 use App\Filament\Admin\Resources\ProjectResource\RelationManagers;
-use App\Models\Project;
+use App\Models\{
+    Project,
+    User
+};
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
@@ -14,7 +17,8 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Filament\Tables\Columns\{
     TextColumn,
-    ToggleColumn
+    ToggleColumn,
+    BooleanColumn
 };
 use Filament\Forms\Components\{
     TextInput,
@@ -22,7 +26,8 @@ use Filament\Forms\Components\{
     Toggle,
     Grid,
     Repeater,
-    Section
+    Section,
+    Select
 };
 
 use Filament\Tables\Filters\Filter;
@@ -53,8 +58,16 @@ class ProjectResource extends Resource
         return $form
         ->schema([
             Card::make()->schema([
+
                 Toggle::make('status')
                     ->label('Статус'),
+                Select::make('user_id')
+                    ->label('Пользователь')
+                    ->options(function (){
+                        return User::whereDoesntHave('roles', function ($query) {
+                            $query->whereIn('name', ['admin', 'Admin', 'Super admin']);
+                        })->pluck('email', 'id');
+                    }),
                 TextInput::make('name')
                     ->label('Проект')
                     ->maxLength(255)
@@ -141,6 +154,9 @@ class ProjectResource extends Resource
                     ->sortable(),
                 ToggleColumn::make('status')
                     ->label('Статус')
+                    ->sortable(),
+                BooleanColumn::make('created_by_admin')
+                    ->label('Создано администратором')
                     ->sortable(),
                 TextColumn::make('created_at')
                     ->label('Дата')
@@ -284,7 +300,7 @@ class ProjectResource extends Resource
     {
         return [
             'index' => Pages\ListProjects::route('/'),
-            // 'create' => Pages\CreateProject::route('/create'),
+            'create' => Pages\CreateProject::route('/create'),
             'edit' => Pages\EditProject::route('/{record}/edit'),
         ];
     }

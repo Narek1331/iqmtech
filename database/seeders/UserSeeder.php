@@ -17,7 +17,12 @@ class UserSeeder extends Seeder
                 'name' => 'maximaa7@beget.tech',
                 'email' => 'maximaa7@beget.tech',
                 'password' => 'cECTy!fWb4mi'
-            ]
+            ],
+            [
+                'name' => 'test12120121@gmail.com',
+                'email' => 'test12120121@gmail.com',
+                'password' => 'test12120121@gmail.com'
+            ],
         ];
 
         foreach($admins as $admin)

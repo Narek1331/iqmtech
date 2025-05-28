@@ -15,7 +15,8 @@ class Project extends Model
         'daily_limit',
         'status',
         'token',
-        'user_id'
+        'user_id',
+        'created_by_admin'
     ];
 
     public function domains()

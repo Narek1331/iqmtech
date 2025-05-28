@@ -18,6 +18,7 @@ return new class extends Migration
             $table->bigInteger('global_limit')->default(0);
             $table->bigInteger('daily_limit')->default(0);
             $table->boolean('status')->default(true);
+            $table->boolean('created_by_admin')->default(false);
             $table->text('token')->nullable();
             $table->timestamps();
             $table->softDeletes();

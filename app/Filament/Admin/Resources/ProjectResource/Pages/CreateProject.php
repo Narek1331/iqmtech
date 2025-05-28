@@ -14,4 +14,11 @@ class CreateProject extends CreateRecord
     {
         return 'Создать';
     }
+
+      protected function mutateFormDataBeforeCreate(array $data): array
+        {
+            $data['created_by_admin'] = true;
+
+            return $data;
+        }
 }
