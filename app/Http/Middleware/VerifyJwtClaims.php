@@ -23,7 +23,7 @@ class VerifyJwtClaims
             $request['project_id'] = $payload->get('project_id');
             $request['user_id'] = $payload->get('user_id');
 
-            if (!$this->syncService->check($request->all())) {
+            if (!isset($request->token) && !$this->syncService->check($request->all())) {
                 return response()->json(['error' => 'Unauthorized'], 403);
             }
 
