@@ -124,7 +124,7 @@
         <!-- End Privacy Policy Area -->
 
         <!-- Start Footer Area -->
-        @include('partials.header')
+        @include('partials.footer')
 
         @include('partials.cookie-alert')
 

@@ -3,7 +3,7 @@
         <div class="row align-items-center text-center text-md-start">
             <div class="col-md-9 mb-2 mb-md-0">
                 Мы используем файлы cookie для улучшения работы сайта и анализа сетевого трафика. Оставаясь на нашем сайте, вы соглашаетесь с использованием cookies и принимаете условия
-                <a href="https://iqmtech.ru/privacy-policy" class="text-decoration-underline">Подробнее</a>
+                <a href="/user-agreement" class="text-decoration-underline">Пользовательского соглашения</a>
             </div>
             <div class="col-md-3 text-center text-md-end">
                 <button style="border: none!important" id="acceptCookies" class="default-btn btn btn-primary">
