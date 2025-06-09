@@ -28,119 +28,8 @@
 
     <body>
 
-        <!-- Start Preloader Area -->
-        <div class="preloader">
-            <div class="d-table">
-                <div class="d-table-cell">
-                    <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-                </div>
-            </div>
-        </div>
-        <!-- End Preloader Area -->
+        @include('partials.header')
 
-        <!-- Start Navbar Area -->
-        <div class="navbar-area navbar-style-two">
-            <div class="main-responsive-nav">
-                <div class="container">
-                    <div class="main-responsive-menu">
-                        <div class="logo">
-                            <a href="/">
-                           IQm<span class="dark" style="">.Tech</span>
-                            <br />
-                            <span class="smail-right">платформа</span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="main-navbar">
-                <div class="container-fluid">
-                    <nav class="navbar navbar-expand-md navbar-light">
-                        <a class="navbar-brand" href="/">
-                          IQm<span class="dark" style="">.Tech</span>
-                        <br />
-                            <span class="smail-right">платформа</span></a>
-
-                        <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto">
-                                <li class="nav-item">
-                                    <a href="/#nav1" class="nav-link active">
-                                        Главная
-                                    </a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a href="/#nav2" class="nav-link">
-                                        Услуги
-                                    </a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a href="/#nav3" class="nav-link">
-                                      Этапы
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="/#nav4" class="nav-link">
-                                        Тарифы
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="/#nav5" class="nav-link">
-                                        Технология
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="/#nav6" class="nav-link">
-                                       FAQ
-                                    </a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a href="/#nav7" class="nav-link">Контакты</a>
-                                </li>
-                            </ul>
-
-                            <div class="others-options d-flex align-items-center">
-                                <div class="option-item">
-                                  <p class="phone-number"><i class="ri-phone-fill"></i> <a href="tel:88001001350">8 800 100-13-50</a></p>
-                                </div>
-                                <div class="option-item">
-                                    <a href="/" class="default-btn">Начать работу</a>
-                                </div>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-
-            <div class="others-option-for-responsive">
-                <div class="container">
-                    <div class="dot-menu">
-                        <div class="inner">
-                            <div class="circle circle-one"></div>
-                            <div class="circle circle-two"></div>
-                            <div class="circle circle-three"></div>
-                        </div>
-                    </div>
-
-                    <div class="container">
-                        <div class="option-inner">
-                            <div class="others-options d-flex align-items-center">
-                                <div class="option-item">
-                                    <p class="phone-number"><a href="tel:88001001350">8 800 100-13-50</a></p>
-                                </div>
-
-                                <div class="option-item">
-                                    <a href="/contact" class="default-btn">Получить лиды</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Navbar Area -->
 
         <!-- Start Page Banner Area -->
         <div class="page-banner-area">
@@ -173,144 +62,71 @@
         <div class="privacy-policy-area ptb-100">
             <div class="container">
                 <div class="privacy-policy-content">
-<h2>Согласие на обработку персональных данных</h2>
-<p>Действуя свободно, в своей воле и в своем интересе, а также подтверждая свою
-дееспособность, физическое лицо дает свое согласие Оператору, на обработку своих
-персональных данных со следующими условиями:</p>
- <p>1. Данное Согласие дается на обработку персональных данных, как без использования
-средств автоматизации, так и с их использованием.</p>
-<p>2. Согласие дается на обработку следующих моих персональных данных: ФИО, адрес
-электронной почты; номера контактных телефонов.</p>
-<p>3. Цель обработки персональных данных: осуществление взаимодействия для
-заключения договорных отношений.</p>
-<p>4. В ходе обработки с персональными данными будут совершены следующие
-действия: сбор; запись; систематизация; накопление; хранение; уточнение
-(обновление, изменение); извлечение; использование; блокирование; удаление;
-уничтожение.</p>
-<p>5. Персональные данные обрабатываются до прекращения взаимодействия по
-заключению и исполнению договора или до отказа от взаимодействия.</p>
-<p>6. Персональные данные могут быть переданы третьим лицам с целью осуществления
-взаимодействия с субъектом для заключения договорных отношений.</p>
-<p>7. Согласие может быть отозвано субъектом персональных данных или его
-представителем путем направления письменного заявления Оператору по адресу,
-указанному в начале данного Согласия.</p>
-<p>8. В случае отзыва субъектом персональных данных или его представителем согласия
-на обработку персональных данных Оператор вправе продолжить обработку
-персональных данных без согласия субъекта персональных данных при наличии
-оснований, указанных в пунктах 2–11 части 1 статьи 6, части 2 статьи 10 и части 2
-статьи 11 Федерального закона №152-ФЗ «О персональных данных» от 27.07.2006
-г.</p>
-<p>9. Настоящее согласие действует все время до момента прекращения обработки
-персональных данных, указанных в п.5 и п.7 данного Согласия.</p>
-             </div>
+                     <h1>Согласие на обработку персональных данных</h1>
+
+  <p>
+    Настоящим я, (далее - Посетитель сайта <a href="https://iqmtech.ru" target="_blank">https://iqmtech.ru</a>), во исполнение требований Федерального закона от 27.07.2006 г. № 152-ФЗ «О персональных данных», действуя свободно, своей волей и в своем интересе, а также подтверждая свою дееспособность, даю согласие Оператору – ООО «Максима-Х», ИНН 6828007729, ОГРН 1136828000264, адрес регистрации: 393250, Тамбовская область, г. Рассказово, ул. Озёрная, д.34:
+  </p>
+
+  <ol>
+    <li>
+      На обработку моих персональных данных, с использованием и/или без использования средств автоматизации, путем сбора, записи, систематизации, накопления, хранения, уточнения (обновления, изменения), извлечения, использования, обезличивания, блокирования, удаления, уничтожения, передачи (предоставления, доступа);
+    </li>
+    <li>
+      Согласие дается на обработку следующих персональных данных:
+      <ul>
+        <li>имя,</li>
+        <li>адрес электронной почты,</li>
+        <li>номер телефона,</li>
+        <li>персональная информация, полученная Оператором посредством метрических программ и из cookie-файлов (ВАЖНО: Вы можете отказаться от использования cookie, выбрав соответствующие настройки в браузере),</li>
+        <li>иные данные, самостоятельно предоставленные Посетителем Оператору в рамках использования Сайтов.</li>
+      </ul>
+    </li>
+    <li>
+      Обработка персональных данных Посетителя сайта осуществляется в следующих целях:
+      <ul>
+        <li>Предоставление обратной связи, осуществление деловых коммуникаций с Оператором;</li>
+        <li>Улучшение функциональности и безопасности использования Сайта.</li>
+      </ul>
+    </li>
+    <li>
+      Согласие на обработку персональных данных подтверждается мною путем проставления знака согласия в специальных полях на Сайте при отправке заполненной веб-формы.
+    </li>
+    <li>
+      Согласие действует с даты его предоставления в течение всего срока до:
+      <ul>
+        <li>достижения целей обработки Персональных данных;</li>
+        <li>отзыва согласия на обработку Персональных данных;</li>
+        <li>ликвидации Оператора,</li>
+      </ul>
+      в зависимости от того, какое событие наступит раньше.
+    </li>
+    <li>
+      Я подтверждаю, что владею информацией о том, что в любой момент в течение всего срока действия настоящего согласия, я вправе отозвать согласие путем направления письменного заявления на электронную почту: электронный адрес компании.
+    </li>
+    <li>
+      Я осознаю, что, в случае отказа в предоставлении необходимых Согласий путем проставления отметки (галочки) в соответствующих чек-боксах, Оператор будет вынужден отказать мне в совершении действий, предусмотренных вышеуказанными целями обработки персональных данных.
+    </li>
+    <li>
+      Посещение и использование Сайта подтверждает согласие Пользователя сайта с тем, что Оператор может собирать и обрабатывать данные из cookies в целях, предусмотренных Политикой, а также на передачу данных из cookies третьим лицам в случаях, перечисленных в Политике. В случае несогласия с использованием данного типа файлов, Пользователь должен соответствующим образом установить настройки своего браузера или не использовать Сайт.
+    </li>
+    <li>
+      Оператор обязуется не раскрывать третьим лицам и не распространять персональные данные без согласия Пользователя сайта, если иное не предусмотрено действующим законодательством Российской Федерации.
+    </li>
+  </ol>
+
+  <p>
+    Подтверждаю, что ознакомлен с Политикой Оператора в отношении персональных данных, текст и условия понятны. Настоящим выражаю согласие с условиями Политики в отношении обработки и защиты персональных данных, расположенной по адресу <a href="https://iqmtech.ru/privacy-policy" target="_blank">https://iqmtech.ru/privacy-policy</a>.
+  </p>
+                </div>
             </div>
         </div>
         <!-- End Privacy Policy Area -->
 
         <!-- Start Footer Area -->
-        <footer class="footer-area pt-100">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="single-footer-widget">
-                            <div class="widget-logo">
-                                <a href="/"> IQm<span class="white">.Tech</span><br>
-                                <span class="smail-right-white">платформа</span>
-                                </a>
-                            </div>
-                            <div class="iq-main-company_info">
-                            <a data-fancybox="" href="assets/images/main-hero/accreditation.webp"><img src="assets/images/main-hero/rugerb.svg" width="50" height="46" alt="аккредитация" ><span>Аккредитованная<br> IT-компания</span></a>
-                            </div>
-                        </div>
-                    </div>
+        @include('partials.header')
 
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="single-footer-widget ps-5">
-                            <h3>Меню</h3>
-
-                            <ul class="quick-links">
-                                <li>
-                                    <div class="row justify-content-center">
-                                        <div class="col-lg-6 col-sm-6 col-6">
-                                            <a href="/">Главная</a>
-                                        </div>
-                                        <div class="col-lg-6 col-sm-6 col-6">
-                                            <a href="/#nav2">Услуги</a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="row justify-content-center">
-                                        <div class="col-lg-6 col-sm-6 col-6">
-                                            <a href="/#nav3">Этапы</a>
-                                        </div>
-                                        <div class="col-lg-6 col-sm-6 col-6">
-                                            <a href="/#nav4">Тарифы</a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="row justify-content-center">
-                                    <div class="col-lg-6 col-sm-6 col-6">
-                                        <a href="/#nav5">Технология</a>
-                                    </div>
-                                    <div class="col-lg-6 col-sm-6 col-6">
-                                     <a href="/#nav6">FAQ</a>
-                                    </div>
-                                    </div>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="single-footer-widget ps-5">
-                            <h3>Информация</h3>
-
-                            <ul class="quick-links">
-                                <li><a href="/privacy-policy">Политика обработки персональных данных</a></li>
-                                <li><a href="/consent">Согласие на обработку персональных данных</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="single-footer-widget ps-3">
-                            <h3>Контакты</h3>
-
-                            <ul class="footer-information">
-                                <li>
-                                    <i class="ri-map-pin-line"></i>
-                                    Россия, Екатеринбург, Розы Люксембург, 22
-                                </li>
-                                <li>
-                                    <i class="ri-phone-fill"></i>
-                                    <a href="tel:88001001350">8 800 100-13-50</a>
-                                </li>
-                                <li>
-                                    <i class="ri-mail-line"></i>
-                                    <a href="mailto:support@iqmtech.ru"><span class="__cf_email__" data-cfemail="support@iqmtech.ru">support@iqmtech.ru</span></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="copyright-area">
-                <div class="container">
-                    <div class="copyright-area-content">
-                       <p>ООО «Максима-Х» ИНН 6828007729, КПП 682801001, ОГРН 1136828000264</p>
-                        <p>Все права защищены. @2025 Платформа IQm.Tech
-                            <a href="https://iq-maxima.ru/" target="_blank">
-                              Разработка IQ Maxima
-                            </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-                @include('partials.cookie-alert')
+        @include('partials.cookie-alert')
 
         <!-- End Footer Area -->
 

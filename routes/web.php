@@ -12,19 +12,14 @@ Route::get('/privacy-policy', function () {
     return view('pages.privacy-policy');
 });
 
-// Route::get('/contact', function () {
-//     return view('pages.contact');
-// });
-
 Route::get('/consent', function () {
     return view('pages.consent');
+});
+
+Route::get('/user-agreement', function () {
+    return view('pages.user-agreement');
 });
 
 Route::post('/contact', [ContactController::class, 'sendEmail']);
 
 
-Route::get('/test', function () {
-        Artisan::call('migrate');
-    // $service = new \App\Services\AtsCrmIntegrationService();
-    // dd($service->refreshAccessToken());
-});

@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row align-items-center text-center text-md-start">
             <div class="col-md-9 mb-2 mb-md-0">
-                Мы используем файлы cookie для улучшения работы сайта и анализа сетевого трафика. Продолжая пользоваться сайтом, вы соглашаетесь с политикой использования cookie.
+                Мы используем файлы cookie для улучшения работы сайта и анализа сетевого трафика. Оставаясь на нашем сайте, вы соглашаетесь с использованием cookies и принимаете условия
                 <a href="https://iqmtech.ru/privacy-policy" class="text-decoration-underline">Подробнее</a>
             </div>
             <div class="col-md-3 text-center text-md-end">
