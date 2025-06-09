@@ -4,8 +4,8 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	    <title>Политика конфиденциальности - IQm.Tech</title>
-        <meta name="description" content="Политика конфиденциальности IQm.Tech">
+	    <title>Пользовательское соглашение - IQm.Tech</title>
+        <meta name="description" content="Пользовательское соглашение IQm.Tech">
         <meta name="robots" content="noindex"/>
         <!-- Links of CSS files -->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -24,7 +24,7 @@
         <link rel="stylesheet" href="assets/css/footer.css">
 		<link rel="stylesheet" href="assets/css/responsive.css">
 
-		<title>Политика конфиденциальности</title>
+		<title>Пользовательское соглашение</title>
 
         <link rel="icon" type="image/png" href="assets/images/favicon.png">
     </head>

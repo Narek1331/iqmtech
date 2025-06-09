@@ -61,7 +61,7 @@
                     <ul class="quick-links">
                         <li><a href="/privacy-policy">Политика обработки персональных данных</a></li>
                         <li><a href="/consent">Согласие на обработку персональных данных</a></li>
-                        <li><a href="/user-agreement">Пользовательского соглашения</a></li>
+                        <li><a href="/user-agreement">Пользовательское соглашение</a></li>
                     </ul>
                 </div>
             </div>
